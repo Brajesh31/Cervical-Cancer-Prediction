@@ -53,3 +53,8 @@ The CSV appears structurally consistent with UCI's Cervical Cancer (Risk
 Factors) dataset. Preserve the UCI attribution and CC BY 4.0 terms if the
 local data is derived from that source. See LICENSE and the UCI citation in
 README.md.
+## Notebook output review
+
+Saved cell outputs can contain row-level health information even when no
+names are present. Review and clear unnecessary outputs before sharing a
+notebook, issue attachment, or rendered export.

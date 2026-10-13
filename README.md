@@ -138,3 +138,9 @@ The tracked CSV contains 858 rows and 36 columns. The UCI record reports the
 same number of instances and features and describes demographic, habit, and
 medical-history fields. This structural match supports the likely source but
 does not prove that the local file is byte-identical to the UCI download.
+## Saved notebook output
+
+The committed notebook has saved outputs, including previews of data tables
+and selected feature values. Those are dataset-derived patient-level values.
+Clear outputs before publishing transformed notebooks where row-level
+information is not needed, while retaining proper dataset attribution.

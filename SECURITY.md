@@ -69,3 +69,8 @@ use case.
 requirements.txt records notebook packages, but versions are not locked.
 Review package provenance and advisories before executing notebooks with
 sensitive data or adopting a hosted environment.
+## Local execution
+
+Run the notebook in an isolated environment and use a trusted Jupyter
+installation. Avoid sharing a server or notebook token publicly. Do not mount
+sensitive organizational data into an unreviewed environment.

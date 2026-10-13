@@ -66,3 +66,8 @@ private context only through a suitable channel.
 Be clear about whether a statement is measured, inferred, or hypothetical.
 Do not present the notebook's metrics as medical evidence or use them to
 pressure another person into a clinical choice.
+## Reporting context
+
+A report may include a concise description and the outcome requested. It does
+not need to prove intent or attach extensive evidence to be considered.
+Redact unrelated personal information.

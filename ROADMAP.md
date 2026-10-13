@@ -45,3 +45,8 @@ clinical prediction.
 This repository is not intended to diagnose, screen, treat, triage, or make
 individual care decisions. A future notebook improvement would not by itself
 make the model clinically suitable.
+## Data path completion criteria
+
+The notebook should load the tracked dataset path reliably, without creating
+an untracked duplicate as a hidden prerequisite. The expected filename and
+repository-relative location should be exercised in a clean environment.

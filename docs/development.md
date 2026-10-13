@@ -74,3 +74,8 @@ split.
 Inspect the target distribution and include class-sensitive metrics alongside
 accuracy. Explain threshold selection and uncertainty. Do not imply clinical
 utility from a classification report alone.
+## Notebook output review
+
+The notebook stores executed results. Clear or refresh outputs after changing
+code or data, and verify that output does not expose unnecessary patient-level
+rows before committing or publishing.

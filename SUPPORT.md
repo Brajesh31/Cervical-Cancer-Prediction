@@ -66,3 +66,8 @@ medical information.
 The maintainer may ask for a smaller reproduction, point to a known
 limitation, or close a request outside the repository's educational scope.
 Response time depends on availability.
+## Feature requests
+
+Explain the learning objective, intended analysis, data source, license,
+privacy implications, and validation plan. Requests to diagnose or recommend
+care for real patients are outside this repository's purpose.

@@ -51,3 +51,8 @@ temporary participation limits, or exclusion from project spaces.
 Retaliation against reporters or participants in a review is not acceptable.
 This project is maintained on a best-effort basis; response timing is not
 guaranteed.
+## Good-faith disagreement
+
+Differences about data cleaning, statistics, model choice, or interpretation
+are not misconduct by themselves. Explain your reasoning and avoid attributing
+bad motives to another contributor.

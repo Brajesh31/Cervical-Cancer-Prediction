@@ -65,3 +65,8 @@ early risk prediction, and justify any remaining feature.
 Use a fixed and documented split, preserve class proportions where
 appropriate, and report uncertainty. Compare with a transparent baseline and
 avoid selecting and evaluating a model on the same holdout.
+## Pipeline criteria
+
+Put scaling or other learned preprocessing inside a training-only pipeline
+where required by the estimator. Fit transformations only on training folds
+to avoid leakage from test data.

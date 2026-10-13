@@ -55,3 +55,8 @@ repository-relative location should be exercised in a clean environment.
 Convert documented sentinel values to missing values before counting or
 dropping them. Record row counts after each cleaning step and explain whether
 missingness may bias the retained sample.
+## Prediction-time criteria
+
+For each predictor, identify when it would be known relative to the target.
+Remove post-diagnosis or confirmatory test variables if the stated task is
+early risk prediction, and justify any remaining feature.

@@ -61,3 +61,8 @@ through a reviewed change. Do not add the duplicate copy to Git.
 Use only synthetic examples. Redact names, local file paths that reveal
 account details, tokens, notebooks with saved output, and any patient-level
 medical information.
+## Response expectations
+
+The maintainer may ask for a smaller reproduction, point to a known
+limitation, or close a request outside the repository's educational scope.
+Response time depends on availability.

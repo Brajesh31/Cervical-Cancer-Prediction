@@ -86,3 +86,8 @@ Set and document random seeds and stratification where suitable. Record the
 Python and library versions, test split design, and preprocessing steps.
 A single random holdout from an imbalanced dataset is not sufficient evidence
 of clinical performance.
+## Medical language
+
+Describe this as an educational analysis of a historical dataset. Avoid
+individual risk estimates, treatment advice, claims of diagnosis, or claims
+that the notebook is ready for clinical deployment.

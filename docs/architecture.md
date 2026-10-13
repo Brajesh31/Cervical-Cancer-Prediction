@@ -76,3 +76,9 @@ Jupyter generally runs a notebook relative to its working directory, but the
 source explicitly names data.csv. A local copy under that name is ignored by
 Git for convenience. Prefer correcting the source path to a deliberate
 repository-relative path in a reviewed code change.
+## Missing-value flow
+
+The intended replacement of question-mark values with NaN is commented out.
+The later dropna calls remove recognized missing values, but literal string
+sentinels can remain. Cleaning behavior should be made explicit before model
+fitting.

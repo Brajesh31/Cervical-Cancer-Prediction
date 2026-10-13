@@ -67,3 +67,7 @@ The notebook's preprocessing and split do not establish a sound, reproducible ev
 ## Where are future work items tracked?
 
 The repository's [ROADMAP.md](../ROADMAP.md) lists possible improvements. It is a planning document, not a promise of delivery or an endorsement of clinical use.
+
+## How do I suggest a documentation correction?
+
+Open a focused change with the source or evidence for the correction, and follow `CONTRIBUTING.md`. For health claims or data provenance, be precise about what the repository demonstrates and what remains unknown.

@@ -67,3 +67,8 @@ to make the analysis appear deployable.
 If the notebook is run on a shared platform, restrict access to approved
 people and review how kernels, files, logs, and backups are managed. The
 repository does not implement those controls.
+## Reproducible release record
+
+A shared analysis should identify the repository commit, data citation,
+dependency versions, cleaning rules, feature list, split strategy, and
+evaluation metrics. Do not report a single run as a stable clinical result.

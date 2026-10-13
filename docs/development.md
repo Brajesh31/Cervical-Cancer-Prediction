@@ -63,3 +63,9 @@ into valid values.
 Set and document a random seed and use stratification when appropriate for
 the target. Record the split and avoid comparing models on changing holdouts.
 A single split is still limited evidence.
+## Scaling and pipelines
+
+SVC and Logistic Regression may be sensitive to feature scale. If scaling is
+introduced, fit it within a scikit-learn pipeline using training folds only.
+Never calculate preprocessing statistics from the full dataset before the
+split.

@@ -126,3 +126,9 @@ suspected vulnerability privately as described in SECURITY.md.
 - Troubleshooting: docs/troubleshooting.md
 - Frequently asked questions: docs/faq.md
 - Planned improvements: ROADMAP.md
+## Intended research question
+
+The existing notebook predicts the Dx:Cancer column from a selected subset
+that includes other diagnosis and screening indicators. It does not establish
+that those predictors were available before diagnosis, so its result must not
+be described as early detection or prospective risk prediction.

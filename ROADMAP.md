@@ -50,3 +50,8 @@ make the model clinically suitable.
 The notebook should load the tracked dataset path reliably, without creating
 an untracked duplicate as a hidden prerequisite. The expected filename and
 repository-relative location should be exercised in a clean environment.
+## Missingness completion criteria
+
+Convert documented sentinel values to missing values before counting or
+dropping them. Record row counts after each cleaning step and explain whether
+missingness may bias the retained sample.

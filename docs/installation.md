@@ -100,3 +100,8 @@ lock strategy if repeatability is required.
 The local CSV matches the UCI dataset's reported dimensions, but its
 transformation history is not documented. Keep UCI attribution and CC BY 4.0
 information with any permitted reuse, and review README.md and LICENSE.
+## No environment secrets
+
+The notebook currently reads no API keys or application secrets. Do not add
+credentials to .env.example. If a future workflow requires them, keep real
+values outside the repository and document the integration.

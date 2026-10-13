@@ -56,3 +56,8 @@ person.
 The notebook reads data.csv, while the tracked file is DATA _SET (1).csv.
 Create a local ignored copy using the expected filename or correct the path
 through a reviewed change. Do not add the duplicate copy to Git.
+## Safe issue contents
+
+Use only synthetic examples. Redact names, local file paths that reveal
+account details, tokens, notebooks with saved output, and any patient-level
+medical information.

@@ -150,3 +150,9 @@ Accuracy alone can conceal behavior on an uncommon positive class. Review
 class counts, sensitivity, specificity, precision, recall, and uncertainty
 before drawing any research conclusion. The notebook does not provide a
 clinical operating threshold or validation study.
+## Reproducibility
+
+The notebook does not set random_state on train_test_split or the random
+forest. Reruns can produce different partitions and results. Record software
+versions and split details if continuing the analysis, and do not treat a
+single displayed result as stable evidence.

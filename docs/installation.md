@@ -74,3 +74,8 @@ The CSV contains patient-level health-related information. Use the data only
 under its applicable license and governance requirements. Do not upload it to
 an unapproved cloud notebook or include row-level values in issues and
 screenshots. The notebook is not a clinical tool.
+## Verify the interpreter
+
+Use python --version and python -m pip --version to confirm that Python and
+pip refer to the active virtual environment. Report package versions when
+troubleshooting dependency or notebook behavior.

@@ -63,3 +63,7 @@ Check the dataset's source and applicable terms first, provide the required attr
 ## Why are model comparisons potentially misleading?
 
 The notebook's preprocessing and split do not establish a sound, reproducible evaluation, and candidate diagnosis variables may reveal information closely related to the target. Model comparison requires a justified feature set, leakage controls, class-aware metrics, and a documented protocol.
+
+## Where are future work items tracked?
+
+The repository's [ROADMAP.md](../ROADMAP.md) lists possible improvements. It is a planning document, not a promise of delivery or an endorsement of clinical use.

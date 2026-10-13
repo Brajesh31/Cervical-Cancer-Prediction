@@ -72,3 +72,8 @@ repository does not implement those controls.
 A shared analysis should identify the repository commit, data citation,
 dependency versions, cleaning rules, feature list, split strategy, and
 evaluation metrics. Do not report a single run as a stable clinical result.
+## Intended audience
+
+The analysis is for education and exploratory review. Any change to a
+patient-facing or clinical audience requires a separate governance and
+validation process, not only a hosting change.

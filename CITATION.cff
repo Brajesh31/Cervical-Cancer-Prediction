@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: >-
+  If you use the project code or analysis workflow, cite this repository and
+  the commit or version you consulted. Cite the source dataset separately.
+title: Cervical Cancer Risk Factors Exploratory Notebook
+authors:
+  - family-names: Kumar
+    given-names: Brajesh
+type: software
+repository-code: https://github.com/Brajesh31/Cervical-Cancer-Prediction
+license: MIT
+abstract: >-
+  An exploratory notebook comparing several scikit-learn classifiers on a
+  cervical-cancer risk-factor dataset. The analysis is educational and is not
+  a clinically validated diagnostic or screening system.
+keywords:
+  - health-data education

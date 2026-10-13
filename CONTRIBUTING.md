@@ -80,3 +80,9 @@ The current feature set includes diagnosis and screening fields alongside
 Dx:Cancer. Before changing it, specify when each feature would be available
 relative to the intended prediction. Avoid target leakage and do not call the
 task early detection without a justified prospective design.
+## Reproducible modeling
+
+Set and document random seeds and stratification where suitable. Record the
+Python and library versions, test split design, and preprocessing steps.
+A single random holdout from an imbalanced dataset is not sufficient evidence
+of clinical performance.

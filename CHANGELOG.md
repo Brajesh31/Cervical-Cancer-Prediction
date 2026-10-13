@@ -38,3 +38,8 @@ history is not recorded. The documentation preserves this distinction.
 The notebook contains saved table previews and row-level values. The
 documentation asks maintainers to inspect or clear unnecessary outputs before
 sharing a derivative copy.
+### Evaluation caveats
+
+The split has no random seed or stratification. The notebook does not provide
+external validation, calibration, fairness assessment, or a clinical
+operating threshold. Metric displays are exploratory only.

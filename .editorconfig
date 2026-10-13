@@ -12,3 +12,6 @@ trim_trailing_whitespace = false
 [*.{cff,yml,yaml,toml}]
 indent_style = space
 indent_size = 2
+[*.{ipynb,json}]
+indent_style = space
+indent_size = 2

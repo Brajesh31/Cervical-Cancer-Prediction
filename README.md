@@ -144,3 +144,9 @@ The committed notebook has saved outputs, including previews of data tables
 and selected feature values. Those are dataset-derived patient-level values.
 Clear outputs before publishing transformed notebooks where row-level
 information is not needed, while retaining proper dataset attribution.
+## Class imbalance and metrics
+
+Accuracy alone can conceal behavior on an uncommon positive class. Review
+class counts, sensitivity, specificity, precision, recall, and uncertainty
+before drawing any research conclusion. The notebook does not provide a
+clinical operating threshold or validation study.

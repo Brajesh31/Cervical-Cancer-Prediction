@@ -51,3 +51,7 @@ You can adapt the notebook for a different dataset only after checking its licen
 ## Why does the notebook have saved output cells?
 
 Notebook outputs may be retained from a previous run. They are not a guarantee that the current source and data reproduce those values. Restart the kernel, run the notebook in order, and review outputs for sensitive information before sharing a notebook copy.
+
+## Does the repository include a trained model?
+
+No trained model artifact or supported model-loading interface is provided. The notebook fits estimators during its exploratory workflow; it does not define a production model lifecycle or guarantee reproducibility.

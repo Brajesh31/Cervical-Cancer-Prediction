@@ -95,3 +95,8 @@ current working directory without printing patient rows.
 The manifest does not pin transitive versions or a Python runtime. Separate
 installations may differ. Record versions used for a result and use a reviewed
 lock strategy if repeatability is required.
+## Dataset provenance
+
+The local CSV matches the UCI dataset's reported dimensions, but its
+transformation history is not documented. Keep UCI attribution and CC BY 4.0
+information with any permitted reuse, and review README.md and LICENSE.

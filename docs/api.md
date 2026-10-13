@@ -48,3 +48,8 @@ predictions.
 The data-loading cell expects data.csv relative to the active kernel directory.
 That filename is not present in a clean checkout. Treat this as a reproducibility
 defect, not an undocumented public API parameter.
+## Feature schema concerns
+
+The selected predictors contain diagnosis or screening indicators. A future
+contract must define prediction timing and exclude features unavailable at the
+intended decision point; otherwise the result may be target-leaked.

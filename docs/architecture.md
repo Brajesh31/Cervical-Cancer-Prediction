@@ -99,3 +99,8 @@ Accuracy is plotted across models; MSE and classification reports are also
 printed for selected estimators. No external validation, calibration,
 decision threshold, confidence interval, or clinical utility analysis is
 implemented.
+## Notebook artifacts
+
+Saved outputs are part of the tracked notebook and can retain data-derived
+values even when the source CSV is not attached to a derivative. Inspect or
+clear outputs before publishing a copy.

@@ -50,3 +50,8 @@ third-party dataset material.
 The repository does not document a checksum or transformation history for
 the local CSV. Confirm its source and changes before redistributing a copy
 or making claims that it is byte-identical to the UCI release.
+### Dependencies
+
+NumPy, pandas, Matplotlib, Seaborn, scikit-learn, Jupyter, and Python are
+separately maintained projects. Their own licenses remain in force and are
+not changed by this repository's MIT notice.

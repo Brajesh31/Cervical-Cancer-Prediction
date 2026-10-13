@@ -68,3 +68,9 @@ Jupyter outputs can embed row-level data, tables, or figures in the notebook
 file. Clear output that is not needed for the lesson and inspect the JSON
 diff before committing. Do not publish screenshots of identifiable or
 sensitive health information.
+## Missing-value handling
+
+The source contains question-mark sentinels in some fields, while the
+notebook's replacement statement is commented out. Handle documented
+sentinels explicitly before using dropna, and report how many records are
+removed without exposing their values.

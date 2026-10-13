@@ -76,3 +76,8 @@ Redact unrelated personal information.
 Maintainers should make participation expectations visible, review reports
 impartially, avoid retaliation, and explain decisions when doing so does not
 create additional risk for an affected person.
+## Confidentiality limits
+
+Private reports will be handled carefully and disclosed only as needed for a
+fair review. Absolute confidentiality cannot be promised where safety, law,
+or resolution requires limited disclosure.

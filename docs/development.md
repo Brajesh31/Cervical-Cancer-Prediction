@@ -79,3 +79,8 @@ utility from a classification report alone.
 The notebook stores executed results. Clear or refresh outputs after changing
 code or data, and verify that output does not expose unnecessary patient-level
 rows before committing or publishing.
+## Clinical scope
+
+Any proposal to use this work with patients requires separate scientific,
+clinical, privacy, governance, and regulatory review. A code change or better
+metric does not turn this educational notebook into a validated medical tool.

@@ -33,3 +33,8 @@ release is actually published; do not invent release dates or versions.
 The UCI dataset record identifies 858 instances and 36 features and lists
 CC BY 4.0. The local CSV has the same dimensions, but its exact transformation
 history is not recorded. The documentation preserves this distinction.
+### Notebook output warning
+
+The notebook contains saved table previews and row-level values. The
+documentation asks maintainers to inspect or clear unnecessary outputs before
+sharing a derivative copy.

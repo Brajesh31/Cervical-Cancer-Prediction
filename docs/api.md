@@ -63,3 +63,8 @@ application-level authorization.
 The notebook does not store prediction requests or expose a per-person
 inference route. Kernel variables exist only during the notebook execution
 session unless the operator separately saves them.
+## Metrics are not API guarantees
+
+Displayed accuracy and reports vary because the split and estimator seeds are
+not fixed. They are not a performance service-level promise or a clinical
+guarantee.

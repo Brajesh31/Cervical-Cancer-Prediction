@@ -3,3 +3,4 @@
 *.md text eol=lf
 *.cff text eol=lf
 *.csv text eol=lf
+*.ipynb text eol=lf

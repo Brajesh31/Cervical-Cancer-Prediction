@@ -4,3 +4,4 @@ numpy
 matplotlib
 seaborn
 scikit-learn
+# Direct dependencies used by the analysis notebook.

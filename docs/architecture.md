@@ -82,3 +82,8 @@ The intended replacement of question-mark values with NaN is commented out.
 The later dropna calls remove recognized missing values, but literal string
 sentinels can remain. Cleaning behavior should be made explicit before model
 fitting.
+## Split properties
+
+The 20 percent holdout uses the library defaults for shuffling and has no
+fixed seed or stratification. This makes results variable and can produce an
+unrepresentative split for an imbalanced target.

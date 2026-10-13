@@ -53,3 +53,8 @@ defect, not an undocumented public API parameter.
 The selected predictors contain diagnosis or screening indicators. A future
 contract must define prediction timing and exclude features unavailable at the
 intended decision point; otherwise the result may be target-leaked.
+## No authentication
+
+No user identity or role is implemented. A hosted notebook's login page or
+repository access setting would be an external platform control, not
+application-level authorization.

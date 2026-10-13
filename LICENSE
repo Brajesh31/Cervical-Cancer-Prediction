@@ -39,3 +39,9 @@ UCI lists the Cervical Cancer (Risk Factors) dataset under the Creative
 Commons Attribution 4.0 International license. Review its terms at
 https://creativecommons.org/licenses/by/4.0/. If this CSV is derived from that
 dataset, retain its attribution and license information when sharing it.
+### Notebook outputs
+
+The notebook contains saved tabular outputs derived from the included data.
+Those outputs may carry the same attribution obligations as the source data.
+The MIT license does not independently relicense patient-level records or
+third-party dataset material.

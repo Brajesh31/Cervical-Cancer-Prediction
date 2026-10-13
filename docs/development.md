@@ -52,3 +52,9 @@ The notebook asks for data.csv, while the tracked file has another name.
 A robust code fix should use an explicit repository-relative path or provide a
 clear data configuration, then work from a clean checkout without an
 untracked duplicate.
+## Missing-value processing
+
+The notebook comments out replacement of question-mark markers and then
+calls dropna. Review the parser's treatment of each sentinel, report retained
+and removed row counts, and avoid silently converting categorical unknowns
+into valid values.

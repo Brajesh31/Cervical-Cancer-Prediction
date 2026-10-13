@@ -48,3 +48,8 @@ operating threshold. Metric displays are exploratory only.
 The feature set includes diagnosis and screening variables alongside Dx:Cancer.
 The prediction time and availability of those variables are not defined, so
 early-prediction claims are unsupported.
+### No code model release
+
+This documentation change does not introduce a saved model, web endpoint,
+database, or clinical workflow. The notebook remains the only analysis entry
+point.

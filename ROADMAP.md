@@ -70,3 +70,8 @@ avoid selecting and evaluating a model on the same holdout.
 Put scaling or other learned preprocessing inside a training-only pipeline
 where required by the estimator. Fit transformations only on training folds
 to avoid leakage from test data.
+## Output hygiene criteria
+
+Review notebook cell outputs after every data change. Remove row-level tables
+or unneeded identifiers from shared artifacts and retain only aggregate
+figures that are appropriate to publish.

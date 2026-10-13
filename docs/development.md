@@ -69,3 +69,8 @@ SVC and Logistic Regression may be sensitive to feature scale. If scaling is
 introduced, fit it within a scikit-learn pipeline using training folds only.
 Never calculate preprocessing statistics from the full dataset before the
 split.
+## Imbalance and metrics
+
+Inspect the target distribution and include class-sensitive metrics alongside
+accuracy. Explain threshold selection and uncertainty. Do not imply clinical
+utility from a classification report alone.

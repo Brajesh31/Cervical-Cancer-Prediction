@@ -91,3 +91,8 @@ of clinical performance.
 Describe this as an educational analysis of a historical dataset. Avoid
 individual risk estimates, treatment advice, claims of diagnosis, or claims
 that the notebook is ready for clinical deployment.
+## Privacy review
+
+Treat data rows and notebook outputs as sensitive even when names are absent.
+Do not send the dataset to online notebook services or analytics tools without
+authorization and a privacy review. Redact all issue material.

@@ -43,3 +43,7 @@ Read [CONTRIBUTING.md](../CONTRIBUTING.md) for proposed changes and [SUPPORT.md]
 ## How is the software licensed?
 
 The original project code and documentation are offered under the MIT License, with attribution to Brajesh Kumar. The dataset has separate third-party terms and attribution requirements; the MIT license does not replace them. See [LICENSE](../LICENSE).
+
+## Can I use another CSV file?
+
+You can adapt the notebook for a different dataset only after checking its license, provenance, schema, target definition, and permitted use. Update the documentation and evaluation plan, and do not assume that matching column names make two datasets interchangeable.

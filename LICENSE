@@ -45,3 +45,8 @@ The notebook contains saved tabular outputs derived from the included data.
 Those outputs may carry the same attribution obligations as the source data.
 The MIT license does not independently relicense patient-level records or
 third-party dataset material.
+### Provenance limits
+
+The repository does not document a checksum or transformation history for
+the local CSV. Confirm its source and changes before redistributing a copy
+or making claims that it is byte-identical to the UCI release.

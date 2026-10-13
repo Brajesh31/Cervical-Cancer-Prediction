@@ -156,3 +156,9 @@ The notebook does not set random_state on train_test_split or the random
 forest. Reruns can produce different partitions and results. Record software
 versions and split details if continuing the analysis, and do not treat a
 single displayed result as stable evidence.
+## Dataset license boundary
+
+Keep the UCI dataset attribution and CC BY 4.0 terms with the dataset and
+derivative outputs when applicable. The repository's MIT notice is scoped to
+project-authored code and documentation and cannot relicense third-party
+records.

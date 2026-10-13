@@ -52,3 +52,8 @@ steps.
 The local CSV appears consistent with the UCI Cervical Cancer (Risk Factors)
 dataset structure, but its transformation history is undocumented. Preserve
 the dataset citation and CC BY 4.0 terms when sharing material derived from it.
+## Notebook outputs
+
+The committed notebook includes saved table outputs. A deployment or export
+may publish those values even if the data file is stored elsewhere. Inspect
+the rendered result before sharing a link.

@@ -34,3 +34,8 @@ There is no clinical support, model interpretation service, data-subject
 contact process, or commercial service-level commitment. Questions asking for
 individual medical advice cannot be answered from this notebook. Contact a
 qualified health professional for medical decisions.
+## Dataset questions
+
+The local file appears structurally consistent with UCI's Cervical Cancer
+(Risk Factors) dataset, but its precise provenance and transformation history
+are not recorded. Consult the UCI source and retain attribution if reusing it.

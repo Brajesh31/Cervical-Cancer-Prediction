@@ -62,3 +62,8 @@ the rendered result before sharing a link.
 The notebook currently reads no environment variables, API keys, database
 credentials, or hosted-service secrets. Do not create or publish credentials
 to make the analysis appear deployable.
+## Access and logging
+
+If the notebook is run on a shared platform, restrict access to approved
+people and review how kernels, files, logs, and backups are managed. The
+repository does not implement those controls.

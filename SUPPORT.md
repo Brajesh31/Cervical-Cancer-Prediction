@@ -39,3 +39,9 @@ qualified health professional for medical decisions.
 The local file appears structurally consistent with UCI's Cervical Cancer
 (Risk Factors) dataset, but its precise provenance and transformation history
 are not recorded. Consult the UCI source and retain attribution if reusing it.
+## Missing data questions
+
+The dataset includes question-mark sentinels. The notebook's intended
+replacement statement is commented out, and dropna does not necessarily
+remove literal question marks. Check parsing and missingness before
+interpreting any result.

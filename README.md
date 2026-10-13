@@ -162,3 +162,8 @@ Keep the UCI dataset attribution and CC BY 4.0 terms with the dataset and
 derivative outputs when applicable. The repository's MIT notice is scoped to
 project-authored code and documentation and cannot relicense third-party
 records.
+## Reporting limitations
+
+For a documentation or code issue, include the notebook cell, sanitized
+error, and software versions. Do not attach patient-level rows, private
+health information, or screenshots of saved dataset outputs.

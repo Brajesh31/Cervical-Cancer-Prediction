@@ -58,3 +58,8 @@ The notebook comments out replacement of question-mark markers and then
 calls dropna. Review the parser's treatment of each sentinel, report retained
 and removed row counts, and avoid silently converting categorical unknowns
 into valid values.
+## Reproducible splitting
+
+Set and document a random seed and use stratification when appropriate for
+the target. Record the split and avoid comparing models on changing holdouts.
+A single split is still limited evidence.

@@ -28,3 +28,8 @@ release is actually published; do not invent release dates or versions.
 
 - Added explicit warnings against using notebook outputs for diagnosis,
   screening, treatment, or individual clinical decisions.
+### Data provenance record
+
+The UCI dataset record identifies 858 instances and 36 features and lists
+CC BY 4.0. The local CSV has the same dimensions, but its exact transformation
+history is not recorded. The documentation preserves this distinction.

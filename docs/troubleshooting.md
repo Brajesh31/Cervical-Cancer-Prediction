@@ -45,3 +45,7 @@ The [architecture guide](architecture.md), [API guide](api.md), and [database gu
 ## Check the working directory and launch location
 
 Run Jupyter from the repository root so relative paths resolve predictably. If you launch the notebook from another directory, either return to the root or change the data path explicitly. Avoid keeping multiple copies of the CSV with ambiguous names.
+
+## Confirm the notebook's actual columns
+
+Before changing the feature list, compare the loaded column names with the CSV header and check for whitespace, spelling, or encoding differences. A `KeyError` often means a column name does not match exactly. Keep the target column separate from the input columns and document every feature removed or transformed.

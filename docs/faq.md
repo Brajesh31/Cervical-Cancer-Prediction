@@ -55,3 +55,7 @@ Notebook outputs may be retained from a previous run. They are not a guarantee t
 ## Does the repository include a trained model?
 
 No trained model artifact or supported model-loading interface is provided. The notebook fits estimators during its exploratory workflow; it does not define a production model lifecycle or guarantee reproducibility.
+
+## Can I publish the dataset in a fork?
+
+Check the dataset's source and applicable terms first, provide the required attribution, and verify the provenance of this exact copy. Health-related data deserves careful handling even when a dataset is publicly available. Do not add identifiable or confidential records.

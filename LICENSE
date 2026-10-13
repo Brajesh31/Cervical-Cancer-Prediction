@@ -33,3 +33,9 @@ described for UCI's Cervical Cancer (Risk Factors) dataset. The local file's
 exact provenance and transformations are not recorded. The UCI record credits
 Kelwin Fernandes, Jaime Cardoso, and Jessica Fernandes (2017), and assigns
 DOI https://doi.org/10.24432/C5Z310.
+### Dataset license
+
+UCI lists the Cervical Cancer (Risk Factors) dataset under the Creative
+Commons Attribution 4.0 International license. Review its terms at
+https://creativecommons.org/licenses/by/4.0/. If this CSV is derived from that
+dataset, retain its attribution and license information when sharing it.

@@ -62,3 +62,8 @@ redistributing transformed data.
 Executed table displays and feature previews are saved in the notebook. They
 can preserve record-level information even if the CSV is later removed from
 a derivative package. Review outputs before sharing.
+## Data license versus code license
+
+Original project code is under MIT. The likely source dataset is listed by UCI
+under CC BY 4.0. Preserve the correct attribution and license for each
+component; one notice does not replace the other.

@@ -47,3 +47,8 @@ leakage-resistant validation, independent evaluation, clinical and privacy
 review, access controls, secure operations, monitoring, incident response,
 and documented regulatory assessment. This repository has not completed those
 steps.
+## Data distribution boundary
+
+The local CSV appears consistent with the UCI Cervical Cancer (Risk Factors)
+dataset structure, but its transformation history is undocumented. Preserve
+the dataset citation and CC BY 4.0 terms when sharing material derived from it.

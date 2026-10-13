@@ -45,3 +45,9 @@ The dataset includes question-mark sentinels. The notebook's intended
 replacement statement is commented out, and dropna does not necessarily
 remove literal question marks. Check parsing and missingness before
 interpreting any result.
+## Model metric questions
+
+Reported metrics come from one unseeded, non-stratified split and features
+include diagnosis or screening fields. They are exploratory and are not
+clinical performance evidence. Do not request interpretation for a specific
+person.

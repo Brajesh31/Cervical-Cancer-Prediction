@@ -93,3 +93,9 @@ The analysis does not state when each feature is observed. Biopsy and
 diagnosis fields may be known only at or after a diagnostic procedure. Their
 use may leak information into the target and does not establish pre-screening
 risk prediction.
+## Metric interpretation
+
+Accuracy is plotted across models; MSE and classification reports are also
+printed for selected estimators. No external validation, calibration,
+decision threshold, confidence interval, or clinical utility analysis is
+implemented.

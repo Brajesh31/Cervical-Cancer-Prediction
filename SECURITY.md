@@ -64,3 +64,8 @@ The analysis includes diagnosis or screening indicators among predictors for
 Dx:Cancer. Do not deploy this model or make individual recommendations. A
 feature that overlaps with diagnosis can invalidate a claimed early-prediction
 use case.
+## Dependency security
+
+requirements.txt records notebook packages, but versions are not locked.
+Review package provenance and advisories before executing notebooks with
+sensitive data or adopting a hosted environment.

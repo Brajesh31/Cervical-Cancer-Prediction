@@ -61,3 +61,8 @@ bad motives to another contributor.
 Do not include health records, personal identifiers, private messages, or
 sensitive details in public discussion. Use synthetic examples and share
 private context only through a suitable channel.
+## Evidence and uncertainty
+
+Be clear about whether a statement is measured, inferred, or hypothetical.
+Do not present the notebook's metrics as medical evidence or use them to
+pressure another person into a clinical choice.

@@ -132,3 +132,9 @@ The existing notebook predicts the Dx:Cancer column from a selected subset
 that includes other diagnosis and screening indicators. It does not establish
 that those predictors were available before diagnosis, so its result must not
 be described as early detection or prospective risk prediction.
+## Dataset dimensions
+
+The tracked CSV contains 858 rows and 36 columns. The UCI record reports the
+same number of instances and features and describes demographic, habit, and
+medical-history fields. This structural match supports the likely source but
+does not prove that the local file is byte-identical to the UCI download.

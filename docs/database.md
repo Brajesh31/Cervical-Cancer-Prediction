@@ -51,3 +51,9 @@ the purpose, minimum fields, lawful authority, access control, encryption,
 retention, deletion, backup lifecycle, incident process, and accountable
 operator. Update the data-flow documentation and privacy notice before
 collecting additional information.
+## Provenance limitation
+
+The repository does not include a checksum or documented transformation
+history for the CSV. Treat its UCI attribution as the likely source based on
+its schema and dimensions, and confirm the exact provenance before
+redistributing transformed data.

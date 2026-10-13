@@ -43,3 +43,8 @@ authorized input data, a validated model, versioned input and output schemas,
 error behavior, access controls, audit and retention rules, and clinical and
 privacy review. This repository is not ready to provide individual medical
 predictions.
+## Relative path contract
+
+The data-loading cell expects data.csv relative to the active kernel directory.
+That filename is not present in a clean checkout. Treat this as a reproducibility
+defect, not an undocumented public API parameter.

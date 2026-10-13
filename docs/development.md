@@ -46,3 +46,9 @@ Treat the CSV and saved notebook output as patient-level health information.
 Do not copy rows into issues, commit additional data, or upload records to
 unreviewed services. Preserve CC BY 4.0 attribution if reusing material
 derived from the likely UCI source dataset.
+## Fixing the file path
+
+The notebook asks for data.csv, while the tracked file has another name.
+A robust code fix should use an explicit repository-relative path or provide a
+clear data configuration, then work from a clean checkout without an
+untracked duplicate.

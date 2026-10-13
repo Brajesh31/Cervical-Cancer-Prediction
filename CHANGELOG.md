@@ -53,3 +53,8 @@ early-prediction claims are unsupported.
 This documentation change does not introduce a saved model, web endpoint,
 database, or clinical workflow. The notebook remains the only analysis entry
 point.
+### License separation
+
+The MIT license covers original project work and does not relicense
+third-party data or dependencies. Dataset attribution and applicable terms
+remain attached to data-derived material.

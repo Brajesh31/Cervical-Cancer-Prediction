@@ -55,3 +55,8 @@ or making claims that it is byte-identical to the UCI release.
 NumPy, pandas, Matplotlib, Seaborn, scikit-learn, Jupyter, and Python are
 separately maintained projects. Their own licenses remain in force and are
 not changed by this repository's MIT notice.
+### Medical use
+
+The notebook is an educational analysis and is not clinically validated.
+The license grants rights to the covered code; it does not certify the
+accuracy, safety, or medical suitability of any output.

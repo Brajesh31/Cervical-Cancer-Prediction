@@ -56,3 +56,8 @@ guaranteed.
 Differences about data cleaning, statistics, model choice, or interpretation
 are not misconduct by themselves. Explain your reasoning and avoid attributing
 bad motives to another contributor.
+## Privacy in project spaces
+
+Do not include health records, personal identifiers, private messages, or
+sensitive details in public discussion. Use synthetic examples and share
+private context only through a suitable channel.

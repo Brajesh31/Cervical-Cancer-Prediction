@@ -57,3 +57,7 @@ Inspect missing values both before and after replacing the literal `?` marker. D
 ## Investigate unexpected metric values
 
 Check the target distribution, predicted labels, and confusion matrix alongside accuracy. For imbalanced labels, accuracy alone can hide poor performance on a smaller class. Report class-wise precision, recall, and support, and state the split and preprocessing used.
+
+## Handle plots that do not appear
+
+In Jupyter, verify that the cell completed and that the plotting library is available in the active kernel. Re-run the plotting cell after restarting the kernel if it uses variables from earlier cells. Use a local, reviewed output copy if a plot or notebook output could reveal sensitive records.

@@ -85,3 +85,8 @@ If local policy prevents running Activate.ps1, use
 .venv\Scripts\python.exe -m pip install -r requirements.txt and launch
 .venv\Scripts\jupyter.exe notebook cervical-cancer-risk-data.ipynb. Do not
 change machine-wide execution policy just to start the notebook.
+## Notebook working directory
+
+The notebook reads a relative filename. Start Jupyter from the repository
+root so data.csv resolves there. If the kernel starts elsewhere, inspect its
+current working directory without printing patient rows.

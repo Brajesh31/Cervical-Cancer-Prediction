@@ -65,3 +65,7 @@ In Jupyter, verify that the cell completed and that the plotting library is avai
 ## Keep changes reproducible
 
 When correcting an error, preserve a record of the original behavior and describe the updated path, data treatment, or evaluation procedure. Pinning dependency versions may improve repeatability, but the repository currently provides unpinned direct dependencies and does not claim a validated environment.
+
+## Reporting a reproducible issue
+
+For a code or documentation issue, provide the notebook cell or file, Python and package versions, the command used, and a minimal error message. Do not attach raw patient-level records or secrets. For security reports, use the private reporting route in `SECURITY.md`.

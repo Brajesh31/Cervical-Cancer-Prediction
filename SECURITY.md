@@ -79,3 +79,8 @@ sensitive organizational data into an unreviewed environment.
 Remove names, local paths, tokens, cookies, raw CSV rows, and notebook output
 before posting diagnostics. A synthetic schema-level example is preferred
 over a copied patient record.
+## Scope changes
+
+A future app, upload feature, external integration, or persistent storage
+would change the threat model. Review authentication, authorization, data
+minimization, logging, retention, and incident response before release.

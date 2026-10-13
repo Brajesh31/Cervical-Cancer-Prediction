@@ -77,3 +77,8 @@ commits as a second patient-level file.
 Report how many values use explicit sentinels, how they are converted, and
 which rows or columns are excluded. Avoid exposing the contents of an
 individual record while documenting aggregate cleaning results.
+## No application records
+
+No web app, API, database, or user account records are implemented. This does
+not describe how a third-party notebook host or a user's own environment
+stores files and logs.

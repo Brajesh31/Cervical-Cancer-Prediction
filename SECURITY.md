@@ -58,3 +58,9 @@ README.md.
 Saved cell outputs can contain row-level health information even when no
 names are present. Review and clear unnecessary outputs before sharing a
 notebook, issue attachment, or rendered export.
+## Data leakage and medical safety
+
+The analysis includes diagnosis or screening indicators among predictors for
+Dx:Cancer. Do not deploy this model or make individual recommendations. A
+feature that overlaps with diagnosis can invalidate a claimed early-prediction
+use case.

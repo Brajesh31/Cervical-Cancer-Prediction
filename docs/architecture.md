@@ -87,3 +87,9 @@ fitting.
 The 20 percent holdout uses the library defaults for shuffling and has no
 fixed seed or stratification. This makes results variable and can produce an
 unrepresentative split for an imbalanced target.
+## Feature timing
+
+The analysis does not state when each feature is observed. Biopsy and
+diagnosis fields may be known only at or after a diagnostic procedure. Their
+use may leak information into the target and does not establish pre-screening
+risk prediction.

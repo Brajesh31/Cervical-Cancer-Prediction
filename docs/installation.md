@@ -90,3 +90,8 @@ change machine-wide execution policy just to start the notebook.
 The notebook reads a relative filename. Start Jupyter from the repository
 root so data.csv resolves there. If the kernel starts elsewhere, inspect its
 current working directory without printing patient rows.
+## Dependency reproducibility
+
+The manifest does not pin transitive versions or a Python runtime. Separate
+installations may differ. Record versions used for a result and use a reviewed
+lock strategy if repeatability is required.

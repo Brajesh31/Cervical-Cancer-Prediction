@@ -74,3 +74,8 @@ sensitive data or adopting a hosted environment.
 Run the notebook in an isolated environment and use a trusted Jupyter
 installation. Avoid sharing a server or notebook token publicly. Do not mount
 sensitive organizational data into an unreviewed environment.
+## Report redaction
+
+Remove names, local paths, tokens, cookies, raw CSV rows, and notebook output
+before posting diagnostics. A synthetic schema-level example is preferred
+over a copied patient record.

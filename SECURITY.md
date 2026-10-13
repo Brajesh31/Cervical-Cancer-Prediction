@@ -47,3 +47,9 @@ disclosure.
 - Review notebook output cells before publishing a derivative notebook.
 - Keep Python and dependencies updated in the environment you operate.
 - Do not treat the model output as an individual diagnosis or clinical action.
+## Dataset attribution and redistribution
+
+The CSV appears structurally consistent with UCI's Cervical Cancer (Risk
+Factors) dataset. Preserve the UCI attribution and CC BY 4.0 terms if the
+local data is derived from that source. See LICENSE and the UCI citation in
+README.md.

@@ -49,3 +49,7 @@ Run Jupyter from the repository root so relative paths resolve predictably. If y
 ## Confirm the notebook's actual columns
 
 Before changing the feature list, compare the loaded column names with the CSV header and check for whitespace, spelling, or encoding differences. A `KeyError` often means a column name does not match exactly. Keep the target column separate from the input columns and document every feature removed or transformed.
+
+## Resolve inconsistent or missing-value handling
+
+Inspect missing values both before and after replacing the literal `?` marker. Decide whether rows or columns are excluded or whether an imputation method is appropriate, and report that decision. Do not calculate preprocessing values across the full dataset before splitting; that can leak information from the evaluation set.

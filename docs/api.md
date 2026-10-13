@@ -68,3 +68,7 @@ session unless the operator separately saves them.
 Displayed accuracy and reports vary because the split and estimator seeds are
 not fixed. They are not a performance service-level promise or a clinical
 guarantee.
+## Data-sensitive examples
+
+Do not publish copied feature rows or prediction examples from a patient
+record. Use synthetic schema examples in future interface documentation.

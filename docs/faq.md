@@ -47,3 +47,7 @@ The original project code and documentation are offered under the MIT License, w
 ## Can I use another CSV file?
 
 You can adapt the notebook for a different dataset only after checking its license, provenance, schema, target definition, and permitted use. Update the documentation and evaluation plan, and do not assume that matching column names make two datasets interchangeable.
+
+## Why does the notebook have saved output cells?
+
+Notebook outputs may be retained from a previous run. They are not a guarantee that the current source and data reproduce those values. Restart the kernel, run the notebook in order, and review outputs for sensitive information before sharing a notebook copy.

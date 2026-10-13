@@ -105,3 +105,8 @@ information with any permitted reuse, and review README.md and LICENSE.
 The notebook currently reads no API keys or application secrets. Do not add
 credentials to .env.example. If a future workflow requires them, keep real
 values outside the repository and document the integration.
+## Safe execution
+
+Run the analysis only in an environment authorized to handle this
+patient-level data. Avoid shared notebook services unless their access,
+storage, and retention practices have been reviewed.

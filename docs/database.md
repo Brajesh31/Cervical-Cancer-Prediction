@@ -67,3 +67,8 @@ a derivative package. Review outputs before sharing.
 Original project code is under MIT. The likely source dataset is listed by UCI
 under CC BY 4.0. Preserve the correct attribution and license for each
 component; one notice does not replace the other.
+## Local working copy
+
+The notebook currently reads data.csv, while the tracked CSV has a different
+name. The suggested local copy is ignored by Git and should not be added to
+commits as a second patient-level file.

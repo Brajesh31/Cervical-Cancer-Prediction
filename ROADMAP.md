@@ -75,3 +75,9 @@ to avoid leakage from test data.
 Review notebook cell outputs after every data change. Remove row-level tables
 or unneeded identifiers from shared artifacts and retain only aggregate
 figures that are appropriate to publish.
+## Release criteria
+
+Before any external use, document data governance, model limitations,
+intended users, access controls, monitoring, incident response, and review by
+qualified clinical and statistical experts. Documentation alone is not
+validation.

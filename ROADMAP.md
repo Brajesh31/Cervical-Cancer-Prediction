@@ -60,3 +60,8 @@ missingness may bias the retained sample.
 For each predictor, identify when it would be known relative to the target.
 Remove post-diagnosis or confirmatory test variables if the stated task is
 early risk prediction, and justify any remaining feature.
+## Evaluation completion criteria
+
+Use a fixed and documented split, preserve class proportions where
+appropriate, and report uncertainty. Compare with a transparent baseline and
+avoid selecting and evaluating a model on the same holdout.

@@ -61,3 +61,7 @@ Check the target distribution, predicted labels, and confusion matrix alongside 
 ## Handle plots that do not appear
 
 In Jupyter, verify that the cell completed and that the plotting library is available in the active kernel. Re-run the plotting cell after restarting the kernel if it uses variables from earlier cells. Use a local, reviewed output copy if a plot or notebook output could reveal sensitive records.
+
+## Keep changes reproducible
+
+When correcting an error, preserve a record of the original behavior and describe the updated path, data treatment, or evaluation procedure. Pinning dependency versions may improve repeatability, but the repository currently provides unpinned direct dependencies and does not claim a validated environment.

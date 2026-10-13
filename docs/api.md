@@ -58,3 +58,8 @@ intended decision point; otherwise the result may be target-leaked.
 No user identity or role is implemented. A hosted notebook's login page or
 repository access setting would be an external platform control, not
 application-level authorization.
+## No request persistence
+
+The notebook does not store prediction requests or expose a per-person
+inference route. Kernel variables exist only during the notebook execution
+session unless the operator separately saves them.

@@ -70,3 +70,9 @@ notebook also stores output cells, including previews and row-level values
 derived from the data. No application database is defined, but this does not
 make the patient-level records non-sensitive. Review outputs before sharing
 a derivative notebook and preserve dataset attribution.
+## File resolution
+
+Jupyter generally runs a notebook relative to its working directory, but the
+source explicitly names data.csv. A local copy under that name is ignored by
+Git for convenience. Prefer correcting the source path to a deliberate
+repository-relative path in a reviewed code change.

@@ -59,3 +59,7 @@ No trained model artifact or supported model-loading interface is provided. The 
 ## Can I publish the dataset in a fork?
 
 Check the dataset's source and applicable terms first, provide the required attribution, and verify the provenance of this exact copy. Health-related data deserves careful handling even when a dataset is publicly available. Do not add identifiable or confidential records.
+
+## Why are model comparisons potentially misleading?
+
+The notebook's preprocessing and split do not establish a sound, reproducible evaluation, and candidate diagnosis variables may reveal information closely related to the target. Model comparison requires a justified feature set, leakage controls, class-aware metrics, and a documented protocol.

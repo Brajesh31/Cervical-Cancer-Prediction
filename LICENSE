@@ -26,3 +26,10 @@ The MIT notice above applies to original project code and documentation. It
 does not replace the terms for third-party material that may be included in
 the CSV or saved notebook outputs. The notes below preserve the available
 dataset attribution information.
+### Dataset attribution
+
+The included CSV has 858 records and 36 fields, matching the structure
+described for UCI's Cervical Cancer (Risk Factors) dataset. The local file's
+exact provenance and transformations are not recorded. The UCI record credits
+Kelwin Fernandes, Jaime Cardoso, and Jessica Fernandes (2017), and assigns
+DOI https://doi.org/10.24432/C5Z310.

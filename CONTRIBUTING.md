@@ -56,3 +56,9 @@ Before submitting:
 There is no automated test suite or model validation pipeline in this
 repository today. A successful notebook run does not establish clinical
 validity or safety.
+## Dataset changes
+
+Do not replace or augment the committed data without documenting its source,
+license, transformation history, missingness, and permission for
+redistribution. Preserve the dataset's CC BY 4.0 attribution if it is derived
+from the UCI record.

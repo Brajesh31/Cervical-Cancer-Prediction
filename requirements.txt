@@ -5,3 +5,4 @@ matplotlib
 seaborn
 scikit-learn
 # Direct dependencies used by the analysis notebook.
+# Versions are unpinned; lock versions when reproducible environments are required.

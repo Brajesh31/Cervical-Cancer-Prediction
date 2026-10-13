@@ -41,3 +41,7 @@ Do not commit identifiable or sensitive health records, credentials, or private 
 ## Check the documented project boundaries
 
 The [architecture guide](architecture.md), [API guide](api.md), and [database guide](database.md) describe the repository's current scope. There is no prediction service, API, database, or deployment configuration to troubleshoot.
+
+## Check the working directory and launch location
+
+Run Jupyter from the repository root so relative paths resolve predictably. If you launch the notebook from another directory, either return to the root or change the data path explicitly. Avoid keeping multiple copies of the CSV with ambiguous names.

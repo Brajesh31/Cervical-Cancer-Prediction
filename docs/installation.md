@@ -79,3 +79,9 @@ screenshots. The notebook is not a clinical tool.
 Use python --version and python -m pip --version to confirm that Python and
 pip refer to the active virtual environment. Report package versions when
 troubleshooting dependency or notebook behavior.
+## PowerShell activation fallback
+
+If local policy prevents running Activate.ps1, use
+.venv\Scripts\python.exe -m pip install -r requirements.txt and launch
+.venv\Scripts\jupyter.exe notebook cervical-cancer-risk-data.ipynb. Do not
+change machine-wide execution policy just to start the notebook.

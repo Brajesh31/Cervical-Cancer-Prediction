@@ -57,3 +57,8 @@ The repository does not include a checksum or documented transformation
 history for the CSV. Treat its UCI attribution as the likely source based on
 its schema and dimensions, and confirm the exact provenance before
 redistributing transformed data.
+## Notebook outputs
+
+Executed table displays and feature previews are saved in the notebook. They
+can preserve record-level information even if the CSV is later removed from
+a derivative package. Review outputs before sharing.

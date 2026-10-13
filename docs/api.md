@@ -72,3 +72,8 @@ guarantee.
 
 Do not publish copied feature rows or prediction examples from a patient
 record. Use synthetic schema examples in future interface documentation.
+## Versioning guidance
+
+If an API is ever built, version it independently from notebook cells and
+document compatibility, deprecation, model provenance, data rights, and
+clinical restrictions.

@@ -51,3 +51,8 @@ Reported metrics come from one unseeded, non-stratified split and features
 include diagnosis or screening fields. They are exploratory and are not
 clinical performance evidence. Do not request interpretation for a specific
 person.
+## File-not-found questions
+
+The notebook reads data.csv, while the tracked file is DATA _SET (1).csv.
+Create a local ignored copy using the expected filename or correct the path
+through a reviewed change. Do not add the duplicate copy to Git.

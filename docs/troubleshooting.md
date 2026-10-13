@@ -53,3 +53,7 @@ Before changing the feature list, compare the loaded column names with the CSV h
 ## Resolve inconsistent or missing-value handling
 
 Inspect missing values both before and after replacing the literal `?` marker. Decide whether rows or columns are excluded or whether an imputation method is appropriate, and report that decision. Do not calculate preprocessing values across the full dataset before splitting; that can leak information from the evaluation set.
+
+## Investigate unexpected metric values
+
+Check the target distribution, predicted labels, and confusion matrix alongside accuracy. For imbalanced labels, accuracy alone can hide poor performance on a smaller class. Report class-wise precision, recall, and support, and state the split and preprocessing used.

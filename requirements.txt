@@ -2,3 +2,4 @@ notebook
 pandas
 numpy
 matplotlib
+seaborn

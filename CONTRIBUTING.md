@@ -62,3 +62,9 @@ Do not replace or augment the committed data without documenting its source,
 license, transformation history, missingness, and permission for
 redistribution. Preserve the dataset's CC BY 4.0 attribution if it is derived
 from the UCI record.
+## Notebook output hygiene
+
+Jupyter outputs can embed row-level data, tables, or figures in the notebook
+file. Clear output that is not needed for the lesson and inspect the JSON
+diff before committing. Do not publish screenshots of identifiable or
+sensitive health information.

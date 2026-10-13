@@ -72,3 +72,8 @@ component; one notice does not replace the other.
 The notebook currently reads data.csv, while the tracked CSV has a different
 name. The suggested local copy is ignored by Git and should not be added to
 commits as a second patient-level file.
+## Missingness documentation
+
+Report how many values use explicit sentinels, how they are converted, and
+which rows or columns are excluded. Avoid exposing the contents of an
+individual record while documenting aggregate cleaning results.

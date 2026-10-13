@@ -58,3 +58,7 @@ point.
 The MIT license covers original project work and does not relicense
 third-party data or dependencies. Dataset attribution and applicable terms
 remain attached to data-derived material.
+### Future entries
+
+When source code or analysis changes, add a concise entry under Unreleased.
+When a release is published, move relevant items to its real version and date.

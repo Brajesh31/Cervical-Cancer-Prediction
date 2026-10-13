@@ -43,3 +43,8 @@ sharing a derivative copy.
 The split has no random seed or stratification. The notebook does not provide
 external validation, calibration, fairness assessment, or a clinical
 operating threshold. Metric displays are exploratory only.
+### Feature timing caveat
+
+The feature set includes diagnosis and screening variables alongside Dx:Cancer.
+The prediction time and availability of those variables are not defined, so
+early-prediction claims are unsupported.

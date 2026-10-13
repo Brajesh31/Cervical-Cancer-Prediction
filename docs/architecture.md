@@ -104,3 +104,8 @@ implemented.
 Saved outputs are part of the tracked notebook and can retain data-derived
 values even when the source CSV is not attached to a derivative. Inspect or
 clear outputs before publishing a copy.
+## Execution boundary
+
+The repository provides no endpoint or inference application. Running a
+notebook cell executes analysis in the local Jupyter kernel; it does not
+deploy a reusable prediction service.

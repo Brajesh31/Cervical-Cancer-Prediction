@@ -77,3 +77,8 @@ evaluation metrics. Do not report a single run as a stable clinical result.
 The analysis is for education and exploratory review. Any change to a
 patient-facing or clinical audience requires a separate governance and
 validation process, not only a hosting change.
+## Deployment blockers
+
+The data filename mismatch, unverified sentinel handling, unseeded split,
+possible predictor leakage, and lack of external validation must be resolved
+before even a research service is considered.

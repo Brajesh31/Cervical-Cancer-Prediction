@@ -82,3 +82,9 @@ individual record while documenting aggregate cleaning results.
 No web app, API, database, or user account records are implemented. This does
 not describe how a third-party notebook host or a user's own environment
 stores files and logs.
+## Research reuse
+
+Before using the data for a new research question, review the source terms,
+provenance, study context, consent and governance limitations, bias, and
+relevant ethical oversight. A publicly available download is not a blanket
+authorization for every downstream use.

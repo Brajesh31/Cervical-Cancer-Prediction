@@ -71,3 +71,8 @@ pressure another person into a clinical choice.
 A report may include a concise description and the outcome requested. It does
 not need to prove intent or attach extensive evidence to be considered.
 Redact unrelated personal information.
+## Maintainer responsibilities
+
+Maintainers should make participation expectations visible, review reports
+impartially, avoid retaliation, and explain decisions when doing so does not
+create additional risk for an affected person.

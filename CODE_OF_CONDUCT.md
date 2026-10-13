@@ -81,3 +81,8 @@ create additional risk for an affected person.
 Private reports will be handled carefully and disclosed only as needed for a
 fair review. Absolute confidentiality cannot be promised where safety, law,
 or resolution requires limited disclosure.
+## Review requests
+
+A person affected by an enforcement decision may privately ask the maintainer
+to review it and provide relevant context. A review does not guarantee a
+different outcome.

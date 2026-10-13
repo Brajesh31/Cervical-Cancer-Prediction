@@ -60,3 +60,8 @@ not changed by this repository's MIT notice.
 The notebook is an educational analysis and is not clinically validated.
 The license grants rights to the covered code; it does not certify the
 accuracy, safety, or medical suitability of any output.
+### Attribution boundary
+
+When reusing project-authored code, preserve the MIT copyright and permission
+notice. When reusing dataset material, also follow its applicable dataset
+license and citation requirements. Assess each component by its provenance.

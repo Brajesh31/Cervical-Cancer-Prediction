@@ -1,0 +1,14 @@
+flowchart TD
+    A[Define research question] --> B{Prediction time defined?}
+    B -- No --> X[Do not claim prospective prediction]
+    B -- Yes --> C[Audit feature availability]
+    C --> D{Leakage reviewed?}
+    D -- No --> Y[Revise feature set]
+    D -- Yes --> E[Define split and preprocessing]
+    E --> F[Choose class-aware metrics]
+    F --> G[Document uncertainty]
+    G --> H[Independent validation and expert review]
+    H --> I[Research interpretation only]
+    I --> J[Clinical use unsupported]
+    classDef stop fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
+    class X,Y,J stop

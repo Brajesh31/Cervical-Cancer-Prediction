@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation and setup
+    url: https://github.com/Brajesh31/Cervical-Cancer-Prediction/tree/main/docs
+    about: Read setup, data handling, evaluation, and troubleshooting guides.
+  - name: 🔐 Private security report
+    url: https://github.com/Brajesh31/Cervical-Cancer-Prediction/security
+    about: Use private vulnerability reporting where available. Never post sensitive data.

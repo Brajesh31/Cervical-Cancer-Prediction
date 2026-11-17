@@ -1,171 +1,276 @@
-# Cervical Cancer Risk Factors: Exploratory Notebook
+<div align="center">
 
-This repository contains one Jupyter notebook and a tabular dataset for an
-exploratory machine-learning exercise involving cervical-cancer risk factors.
-The notebook compares a Random Forest classifier, an SVM classifier, and
-Logistic Regression using scikit-learn.
+# 🩺 Cervical Cancer Risk Factors Analysis
 
-## Medical safety statement
+### An educational, notebook-based exploration of a cervical-cancer risk-factor dataset
 
-This repository is for education and reproducible code review only. It is not
-a medical device, screening service, clinical decision-support tool, or
-diagnostic system. Its code and reported metrics have not been clinically
-validated. Do not use its outputs to diagnose, screen, triage, treat, reassure,
-or make decisions about an individual. Consult qualified health professionals
-for medical questions.
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)](https://jupyter.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/Code%20License-MIT-green.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)](ROADMAP.md)
 
-## Repository contents
+**Important:** This project is for learning and exploratory analysis. It is not a diagnostic system, screening tool, clinical decision-support product, or substitute for professional medical care.
 
-- cervical-cancer-risk-data.ipynb: the exploratory notebook, including saved
-  cell outputs.
-- DATA _SET (1).csv: a patient-level tabular file with 858 records and 36
-  fields, including demographic, behavioral, reproductive-health, STD, and
-  diagnosis information.
-- README.md: project overview and responsible-use guidance.
-- docs/: project, data, development, deployment, and troubleshooting guides.
+</div>
 
-The notebook attempts to read a file named data.csv, but the tracked CSV has a
-different filename. Create a local copy named data.csv next to the notebook
-before running it, or update the notebook path as a reviewed code change. The
-local copy is ignored by Git.
+---
 
-## Dataset attribution and license
+## 🧭 Contents
+- [Overview](#-overview)
+- [Medical and research safety](#-medical-and-research-safety)
+- [What is implemented](#-what-is-implemented)
+- [Repository structure](#-repository-structure)
+- [Workflow](#-workflow)
+- [Dataset and attribution](#-dataset-and-attribution)
+- [Environment setup](#-environment-setup)
+- [Run the notebook](#-run-the-notebook)
+- [Current limitations](#-current-analysis-limitations)
+- [Documentation](#-documentation-library)
+- [Privacy and governance](#-quality-privacy-and-governance)
+- [Contributing](#-contributing)
+- [License](#-license)
 
-The column names and 858-by-36 structure appear to match the UCI Machine
-Learning Repository's Cervical Cancer (Risk Factors) dataset. The exact
-provenance and transformations of the file in this repository are not
-recorded, so verify them before redistribution.
+## 🎯 Overview
 
-UCI credits Kelwin Fernandes, Jaime Cardoso, and Jessica Fernandes (2017),
-Cervical Cancer (Risk Factors), UCI Machine Learning Repository,
-https://doi.org/10.24432/C5Z310. UCI lists the dataset under the Creative
-Commons Attribution 4.0 International license (CC BY 4.0):
-https://creativecommons.org/licenses/by/4.0/
+This repository contains a Jupyter notebook exploring a tabular dataset associated with cervical-cancer risk factors. It uses Python data-analysis libraries and scikit-learn estimators to demonstrate a basic classification workflow.
 
-The MIT license in this repository applies to original project code and
-documentation. It does not replace the separate license and attribution
-requirements for the dataset or dataset-derived notebook outputs. See LICENSE
-and docs/database.md.
+The tracked dataset has **858 records and 36 fields**. The notebook uses `Dx:Cancer` as its target and compares Random Forest, Support Vector Classifier (SVC), and Logistic Regression with one train/test split.
 
-## Environment and installation
+The project is a learning resource for data inspection, preprocessing, classification, and evaluation. It does **not** demonstrate reliable prospective risk prediction.
 
-Use a supported Python 3 environment. The repository does not record a tested
-Python version or pinned package environment. The notebook imports pandas,
-NumPy, Matplotlib, Seaborn, and scikit-learn; Jupyter is needed to run the
-notebook interactively.
+## 🚨 Medical and research safety
 
-Create a virtual environment and install the listed dependencies:
+> **Do not use this project to make decisions about an individual.**
 
-    py -m venv .venv
-    .\.venv\Scripts\Activate.ps1
-    python -m pip install -r requirements.txt
-    Copy-Item "DATA _SET (1).csv" data.csv
-    jupyter notebook cervical-cancer-risk-data.ipynb
+- It is not a medical device or clinically validated model.
+- It must not be used to diagnose, screen, triage, treat, reassure, or estimate an individual's cancer risk.
+- A high notebook metric does not establish clinical performance, utility, fairness, or safety.
+- Diagnosis and screening variables among the predictors may leak information about the target.
+- The dataset contains sensitive health-related information. Never post individual rows, screenshots, or saved notebook outputs in public discussions.
+- Medical questions and screening decisions belong with qualified health professionals.
 
-On macOS or Linux, use python3 -m venv .venv, activate it with
-source .venv/bin/activate, and copy the dataset with
-cp "DATA _SET (1).csv" data.csv before starting Jupyter.
+The project has no clinical oversight, prospective validation, external validation, regulatory review, or approved patient-data governance process.
 
-See docs/installation.md for more detail. Never commit private data or secrets.
+## ✅ What is implemented
 
-## Notebook workflow
+| Area | Current repository evidence |
+|---|---|
+| Data | Tracked CSV with 858 rows and 36 columns |
+| Exploration | Notebook with data inspection and feature selection |
+| Models | Random Forest, SVC, Logistic Regression |
+| Evaluation | One holdout split, selected metrics, accuracy comparison plot |
+| Environment | `requirements.txt` |
+| Serving | No deployed model, inference application, or prediction API |
+| Persistence | No application database or model registry |
+| Testing | No automated model test suite or validated evaluation pipeline |
 
-The notebook loads the CSV, inspects missing values and duplicates, filters a
-subset of columns, and uses Dx:Cancer as its target. It trains Random Forest,
-SVC, and Logistic Regression classifiers on one random train/test split. It
-prints accuracy, mean squared error, and classification reports for some
-models, then plots a comparison of accuracy.
+This table describes the checked-in project, not a future architecture.
 
-This is an exploratory analysis, not a reproducible model pipeline. The split
-has no fixed random seed or stratification. The notebook's attempted
-replacement of question-mark missing-value markers is commented out before
-dropna is called. Predictors include diagnosis and screening fields such as
-Biopsy and Dx:CIN; these may overlap with the cancer target and create target
-leakage. The feature timing and prediction question are not defined as a
-prospective clinical task.
+## 🗂️ Repository structure
 
-## Privacy and responsible handling
+```text
+Cervical-Cancer-Prediction/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   ├── workflows/
+│   │   ├── quality-checks.yml
+│   │   └── update-readme.yml
+│   └── pull_request_template.md
+├── docs/
+│   ├── assets/
+│   ├── diagrams/
+│   ├── runbooks/
+│   ├── templates/
+│   ├── architecture.md
+│   ├── installation.md
+│   ├── development.md
+│   ├── database.md
+│   ├── data-dictionary.md
+│   ├── evaluation-protocol.md
+│   ├── reproducibility.md
+│   ├── ethics-and-governance.md
+│   ├── privacy.md
+│   ├── accessibility.md
+│   ├── api.md
+│   ├── deployment.md
+│   ├── troubleshooting.md
+│   └── faq.md
+├── cervical-cancer-risk-data.ipynb
+├── DATA _SET (1).csv
+├── requirements.txt
+├── README.md
+├── CHANGELOG.md
+├── CITATION.cff
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── ROADMAP.md
+├── SECURITY.md
+└── SUPPORT.md
+```
 
-The dataset contains patient-level health-related records. Even without direct
-names in the visible column list, row-level medical and sexual-health values
-are sensitive. Do not upload the CSV or notebook to an unapproved service, and
-do not share screenshots or logs that reveal individual rows. Follow the
-dataset license and institutional or organizational data-handling rules that
-apply to your use.
+Folders also contain editable diagrams, runbooks, templates, and repository support assets. Their presence does not imply a production service.
 
-## Limitations
+## 🔄 Workflow
 
-- The notebook reads data.csv while the committed dataset uses another name.
-- Missing-value handling is incomplete; literal question marks may not be
-  treated as missing values by the notebook.
-- The prediction target and the included diagnosis/screening predictors may
-  cause leakage and do not define early prediction.
-- The class distribution and threshold behavior are not analyzed as a
-  clinical screening problem.
-- The train/test split is unseeded and not stratified; there is no repeated
-  evaluation, calibration, external validation, or fairness assessment.
-- The notebook does not save a trained model or provide an inference app,
-  database, or public API.
-- Saved notebook outputs include table previews and row-level values. Review
-  or clear them before creating a derivative copy for sharing.
+![Exploratory research workflow](docs/assets/research-workflow.svg)
 
-## Contributing and support
+The notebook follows this broad sequence:
 
-Read CONTRIBUTING.md before proposing changes. Use synthetic examples in
-issues and pull requests. For technical questions, follow SUPPORT.md; report a
-suspected vulnerability privately as described in SECURITY.md.
+1. Read the CSV into pandas.
+2. Inspect dimensions, missing values, and duplicates.
+3. Select features and the `Dx:Cancer` target.
+4. Split rows into training and test partitions.
+5. Fit three scikit-learn estimators.
+6. Print selected metrics and plot an accuracy comparison.
 
-## Documentation
+See the [editable workflow diagram](docs/diagrams/research-workflow.mmd) and [architecture guide](docs/architecture.md).
 
-- System structure: docs/architecture.md
-- Setup: docs/installation.md
-- Notebook development: docs/development.md
-- Deployment considerations: docs/deployment.md
-- API status: docs/api.md
-- Data and persistence: docs/database.md
-- Troubleshooting: docs/troubleshooting.md
-- Frequently asked questions: docs/faq.md
-- Planned improvements: ROADMAP.md
-## Intended research question
+## 📊 Dataset and attribution
 
-The existing notebook predicts the Dx:Cancer column from a selected subset
-that includes other diagnosis and screening indicators. It does not establish
-that those predictors were available before diagnosis, so its result must not
-be described as early detection or prospective risk prediction.
-## Dataset dimensions
+The CSV has 858 rows and 36 columns. Its schema and dimensions appear consistent with UCI's **Cervical Cancer (Risk Factors)** dataset.
 
-The tracked CSV contains 858 rows and 36 columns. The UCI record reports the
-same number of instances and features and describes demographic, habit, and
-medical-history fields. This structural match supports the likely source but
-does not prove that the local file is byte-identical to the UCI download.
-## Saved notebook output
+UCI credits Kelwin Fernandes, Jaime Cardoso, and Jessica Fernandes (2017), DOI [10.24432/C5Z310](https://doi.org/10.24432/C5Z310), and lists the dataset under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-The committed notebook has saved outputs, including previews of data tables
-and selected feature values. Those are dataset-derived patient-level values.
-Clear outputs before publishing transformed notebooks where row-level
-information is not needed, while retaining proper dataset attribution.
-## Class imbalance and metrics
+This repository does not include a checksum or transformation history proving that its local copy is byte-identical to UCI's release. Verify provenance before redistribution. The MIT license applies to original project code and documentation only; it does not override third-party dataset terms. See [LICENSE](LICENSE) and [data documentation](docs/database.md).
 
-Accuracy alone can conceal behavior on an uncommon positive class. Review
-class counts, sensitivity, specificity, precision, recall, and uncertainty
-before drawing any research conclusion. The notebook does not provide a
-clinical operating threshold or validation study.
-## Reproducibility
+## 🧰 Environment setup
 
-The notebook does not set random_state on train_test_split or the random
-forest. Reruns can produce different partitions and results. Record software
-versions and split details if continuing the analysis, and do not treat a
-single displayed result as stable evidence.
-## Dataset license boundary
+### Prerequisites
+- Python 3 compatible with the installed Jupyter and scikit-learn releases.
+- Git, if cloning.
+- A local environment approved to handle sensitive health-related data.
 
-Keep the UCI dataset attribution and CC BY 4.0 terms with the dataset and
-derivative outputs when applicable. The repository's MIT notice is scoped to
-project-authored code and documentation and cannot relicense third-party
-records.
-## Reporting limitations
+The repository does not pin all dependency versions or declare a tested Python version. Lock exact versions after validating a reproducible environment.
 
-For a documentation or code issue, include the notebook cell, sanitized
-error, and software versions. Do not attach patient-level rows, private
-health information, or screenshots of saved dataset outputs.
+### 1. Clone
+```bash
+git clone https://github.com/Brajesh31/Cervical-Cancer-Prediction.git
+cd Cervical-Cancer-Prediction
+```
 
-Last updated: 2026-11-17 10:03 UTC
+### 2. Create a virtual environment
+
+**Windows PowerShell**
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**macOS / Linux**
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+### 4. Resolve the CSV filename mismatch
+
+The notebook currently reads `data.csv`, but the tracked file is named `DATA _SET (1).csv`. Until the notebook path is corrected, create a local copy:
+
+**Windows PowerShell**
+```powershell
+Copy-Item "DATA _SET (1).csv" data.csv
+```
+
+**macOS / Linux**
+```bash
+cp "DATA _SET (1).csv" data.csv
+```
+
+The local `data.csv` is ignored by Git. Do not commit a duplicate patient-level dataset.
+
+### 5. Launch Jupyter
+```bash
+jupyter notebook cervical-cancer-risk-data.ipynb
+```
+
+Run cells in order in a trusted local environment. Review saved outputs before sharing a modified notebook.
+
+## 🧪 Run the notebook
+
+The notebook is the executable analysis artifact. There is no CLI command, supported inference function, model-serving application, or prediction endpoint.
+
+Before interpreting results, review:
+- Whether question-mark sentinels are converted before `dropna()`.
+- Whether every predictor is available at the intended prediction time.
+- Whether fields such as biopsy or other diagnosis indicators leak the target.
+- Whether preprocessing is fitted only on training folds.
+- Whether class imbalance is reflected in metrics beyond accuracy.
+- Whether split randomness and software versions are recorded.
+- Whether saved outputs expose unnecessary record-level information.
+
+## ⚠️ Current analysis limitations
+
+1. **File path mismatch:** the notebook reads `data.csv`, which is not the tracked CSV filename.
+2. **Missing values:** the question-mark replacement line is commented out; literal sentinels may survive `dropna()`.
+3. **Potential target leakage:** diagnosis and screening fields are among predictors for `Dx:Cancer`. This may invalidate an early-prediction interpretation.
+4. **Undefined prediction time:** feature availability relative to a prospective decision is undocumented.
+5. **Single unseeded split:** results can vary and the split is not stratified.
+6. **Limited metrics:** accuracy alone is inadequate, especially with an uncommon positive class.
+7. **No external validation:** there is no independent cohort, calibration study, confidence interval, or clinical utility analysis.
+8. **No model artifact:** trained estimators are not saved for supported inference.
+9. **Saved notebook outputs:** committed outputs may contain record-level data-derived values.
+10. **No clinical validation:** software execution is not evidence of medical safety or effectiveness.
+
+A corrected pipeline and stronger metrics would improve research quality, but would not by themselves make this a clinical tool.
+
+## 📚 Documentation library
+
+| Guide | Coverage |
+|---|---|
+| [Architecture](docs/architecture.md) | Notebook architecture and boundaries |
+| [Installation](docs/installation.md) | Environment and CSV path workaround |
+| [Development](docs/development.md) | Notebook changes and review |
+| [Data and database](docs/database.md) | Dataset, provenance, and storage |
+| [Data dictionary](docs/data-dictionary.md) | Field groups and schema cautions |
+| [Evaluation protocol](docs/evaluation-protocol.md) | Leakage, splits, metrics, validation |
+| [Reproducibility](docs/reproducibility.md) | Environment and run records |
+| [Ethics and governance](docs/ethics-and-governance.md) | Responsible research boundaries |
+| [Privacy](docs/privacy.md) | Patient-level data and outputs |
+| [Accessibility](docs/accessibility.md) | Accessible charts and docs |
+| [API status](docs/api.md) | No supported API |
+| [Deployment](docs/deployment.md) | No deployable service |
+| [Troubleshooting](docs/troubleshooting.md) | Local notebook issues |
+| [FAQ](docs/faq.md) | Common questions |
+| [Diagrams](docs/diagrams/README.md) | Editable Mermaid diagrams |
+| [Runbooks](docs/runbooks/README.md) | Repository and research procedures |
+| [Templates](docs/templates/README.md) | Reusable research and review forms |
+
+## 🔐 Quality, privacy and governance
+
+- Never commit credentials, personally identifying information, or additional patient records.
+- Use aggregate or synthetic examples in issues and pull requests.
+- Inspect notebook JSON diffs for output cells that expose records.
+- Preserve dataset attribution and license obligations.
+- Do not upload this dataset to unapproved hosted notebooks or third-party tools.
+- Treat model outputs as experimental and non-actionable.
+- Read [SECURITY.md](SECURITY.md), [privacy guidance](docs/privacy.md), and [ethics and governance](docs/ethics-and-governance.md).
+
+## 🤝 Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md). Useful work includes correcting the data path, documenting missing-value handling, creating a reproducible evaluation pipeline, auditing feature timing and leakage, and adding tests. Do not submit patient records or unsupported medical claims. Use the repository issue and pull request templates.
+
+## 🗺️ Roadmap
+
+See [ROADMAP.md](ROADMAP.md). Research-quality improvements should precede any deployment discussion. A production or clinical proposal would require independent scientific, clinical, privacy, governance, and regulatory review.
+
+## 📄 License
+
+Original project code and documentation are distributed under MIT. Dataset material may carry separate CC BY 4.0 requirements. Read the full [LICENSE](LICENSE) before redistribution.
+
+---
+
+<div align="center">
+
+**Built for learning, reproducible analysis, and responsible research communication.**
+
+⭐ Star the repository if it helps your learning. Do not use it for individual medical decisions.
+
+</div>

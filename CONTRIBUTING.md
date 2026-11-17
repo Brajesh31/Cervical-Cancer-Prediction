@@ -53,9 +53,13 @@ Before submitting:
 4. List the environment and checks actually used.
 5. State clearly if the notebook could not be executed.
 
-There is no automated test suite or model validation pipeline in this
-repository today. A successful notebook run does not establish clinical
-validity or safety.
+The repository includes structural and synthetic-data tests. Install optional
+developer tooling with `python -m pip install -r requirements-dev.txt`, then
+run `python -m pytest -q`, `ruff check scripts tests`, and
+`python scripts/validate_project.py`. These checks do not execute the
+notebook against the patient-level dataset. There is still no model-validation
+pipeline, external validation, or clinical approval. A successful test or
+notebook run does not establish clinical validity or safety.
 ## Dataset changes
 
 Do not replace or augment the committed data without documenting its source,

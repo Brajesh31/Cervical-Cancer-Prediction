@@ -1,0 +1,17 @@
+flowchart TD
+    A[Local CSV] --> B[Load with pandas]
+    B --> C[Inspect schema and missingness]
+    C --> D[Select notebook features]
+    D --> E[Train-test split]
+    E --> F[Random Forest]
+    E --> G[SVC]
+    E --> H[Logistic Regression]
+    F --> I[Exploratory metrics]
+    G --> I
+    H --> I
+    I --> J[Accuracy comparison plot]
+    J --> K[Interpret with leakage and safety warnings]
+    classDef data fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    classDef caution fill:#ffedd5,stroke:#c2410c,color:#7c2d12
+    class A,B data
+    class K caution

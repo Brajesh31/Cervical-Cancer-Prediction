@@ -11,6 +11,7 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
 [![License](https://img.shields.io/badge/Code%20License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Research%20Prototype-orange)](ROADMAP.md)
+[![Quality Checks](https://github.com/Brajesh31/Cervical-Cancer-Prediction/actions/workflows/quality-checks.yml/badge.svg)](https://github.com/Brajesh31/Cervical-Cancer-Prediction/actions/workflows/quality-checks.yml)
 
 **Important:** This project is for learning and exploratory analysis. It is not a diagnostic system, screening tool, clinical decision-support product, or substitute for professional medical care.
 
@@ -62,10 +63,10 @@ The project has no clinical oversight, prospective validation, external validati
 | Exploration | Notebook with data inspection and feature selection |
 | Models | Random Forest, SVC, Logistic Regression |
 | Evaluation | One holdout split, selected metrics, accuracy comparison plot |
-| Environment | `requirements.txt` |
+| Environment | `requirements.txt`, optional `requirements-dev.txt` |
 | Serving | No deployed model, inference application, or prediction API |
 | Persistence | No application database or model registry |
-| Testing | No automated model test suite or validated evaluation pipeline |
+| Testing | Repository contract and synthetic-CSV tests; no model-validation suite |
 
 This table describes the checked-in project, not a future architecture.
 

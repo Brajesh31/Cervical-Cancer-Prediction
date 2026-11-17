@@ -32,6 +32,10 @@ release is actually published; do not invent release dates or versions.
   Ruff configuration, Makefile targets, and GitHub Actions quality checks.
 - CI deliberately does not load the patient-level health dataset.
 
+- Added project structure, testing, quality assurance, and data-retention guides.
+- Added project structure and CI quality-gate diagrams and linked them from the
+  documentation hub and primary README.
+
 ### Clarified
 
 - The notebook compares Random Forest, SVC, and Logistic Regression on one

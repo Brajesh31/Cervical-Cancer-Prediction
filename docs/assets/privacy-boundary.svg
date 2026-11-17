@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+<title id="title">Sensitive data handling boundary</title>
+<desc id="desc">The patient-level dataset stays in an approved local environment. Public documentation uses aggregate or synthetic examples only. Raw patient rows must not be posted in public issues or external services.</desc>
+<rect width="1200" height="330" rx="22" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="55" y="82" width="260" height="150" rx="18" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+<rect x="470" y="82" width="260" height="150" rx="18" fill="#dbeafe" stroke="#2563eb" stroke-width="3"/>
+<rect x="885" y="82" width="260" height="150" rx="18" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+<g font-size="22" font-weight="700" fill="#0f172a"><text x="185" y="130">Sensitive CSV</text><text x="600" y="130">Approved local</text><text x="1015" y="130">Public docs</text></g>
+<g font-size="16" fill="#334155"><text x="185" y="163">Patient-level records</text><text x="600" y="163">Notebook processing</text><text x="1015" y="163">Synthetic / aggregate</text><text x="185" y="188">Restricted handling</text><text x="600" y="188">Review outputs</text><text x="1015" y="188">No individual rows</text></g>
+<g fill="none" stroke="#475569" stroke-width="4"><path d="M315 157h145l-18-12m18 12-18 12"/><path d="M730 157h145l-18-12m18 12-18 12"/></g>
+<path d="M600 248v28m-16-14h32" stroke="#b91c1c" stroke-width="5" stroke-linecap="round"/>
+<text x="600" y="306" fill="#991b1b" font-size="17" font-weight="700">Never post raw patient-level data, private records, or sensitive notebook output</text>
+</g></svg>

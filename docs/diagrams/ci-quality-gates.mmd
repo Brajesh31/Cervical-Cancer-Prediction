@@ -1,0 +1,14 @@
+flowchart TD
+    A[Push or pull request] --> B[Checkout source]
+    B --> C[Install developer dependencies]
+    C --> D[Ruff lint]
+    D --> E[Pytest synthetic and repository checks]
+    E --> F[Validate required files and Markdown links]
+    F --> G[Validate notebook JSON]
+    G --> H[Parse GitHub YAML]
+    H --> I[Quality workflow result]
+    X[Patient-level CSV] -. excluded from hosted CI .-> Z[Local approved environment only]
+    classDef check fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef exclusion fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
+    class D,E,F,G,H check
+    class X,Z exclusion

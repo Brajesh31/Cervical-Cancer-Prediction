@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import json
 import unittest
-from pathlib import Path
 
 from scripts.validate_project import (
     REQUIRED_PATHS,

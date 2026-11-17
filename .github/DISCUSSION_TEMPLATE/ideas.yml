@@ -1,0 +1,23 @@
+title: "💡 Idea"
+body:
+  - type: markdown
+    attributes:
+      value: "Describe a project improvement. Do not propose patient-facing use without independent review."
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Problem and expected benefit
+    validations:
+      required: true
+  - type: textarea
+    id: safety
+    attributes:
+      label: Data, privacy, and research-safety impact
+    validations:
+      required: true

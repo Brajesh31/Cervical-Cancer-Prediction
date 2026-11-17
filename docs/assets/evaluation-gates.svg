@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">Research evaluation gates</title>
+<desc id="desc">Four sequential research checks: define prediction time, audit features for leakage, use reproducible validation and class-aware metrics, then report uncertainty and independent validation. Clinical use is not authorized by this process.</desc>
+<rect width="1200" height="320" rx="22" fill="#f8fafc"/>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<g fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"><rect x="35" y="76" width="235" height="115" rx="16"/><rect x="330" y="76" width="235" height="115" rx="16"/><rect x="625" y="76" width="235" height="115" rx="16"/></g>
+<g fill="#ffedd5" stroke="#c2410c" stroke-width="2"><rect x="920" y="76" width="245" height="115" rx="16"/></g>
+<g fill="#0f172a" font-size="20" font-weight="700"><text x="152" y="116">1. Define task</text><text x="447" y="116">2. Audit features</text><text x="742" y="116">3. Validate</text><text x="1042" y="116">4. Report</text></g>
+<g fill="#334155" font-size="15"><text x="152" y="148">Target and timepoint</text><text x="447" y="148">Availability and leakage</text><text x="742" y="148">Reproducible split</text><text x="1042" y="148">Metrics and uncertainty</text></g>
+<g stroke="#64748b" stroke-width="3" fill="none"><path d="M270 134h50l-11-8m11 8-11 8"/><path d="M565 134h50l-11-8m11 8-11 8"/><path d="M860 134h50l-11-8m11 8-11 8"/></g>
+<rect x="220" y="228" width="760" height="54" rx="12" fill="#7f1d1d"/>
+<text x="600" y="262" fill="#fff" font-size="18" font-weight="700">Research checks do not equal clinical validation or authorization</text>
+</g></svg>

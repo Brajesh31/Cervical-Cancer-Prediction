@@ -29,7 +29,8 @@ class RepositoryContractTests(unittest.TestCase):
     def test_readme_contains_medical_safety_boundary(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8").lower()
         self.assertIn("not a diagnostic system", readme)
-        self.assertIn("not clinically validated", readme)
+        self.assertIn("not a medical device", readme)
+        self.assertIn("no clinical validation", readme)
         self.assertIn("patient-level", readme)
 
     def test_data_path_mismatch_is_documented(self) -> None:

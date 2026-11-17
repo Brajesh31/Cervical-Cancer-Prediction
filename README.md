@@ -55,6 +55,8 @@ The project is a learning resource for data inspection, preprocessing, classific
 
 The project has no clinical oversight, prospective validation, external validation, regulatory review, or approved patient-data governance process.
 
+![Sensitive data handling boundary](docs/assets/privacy-boundary.svg)
+
 ## ✅ What is implemented
 
 | Area | Current repository evidence |
@@ -258,6 +260,8 @@ See [scripts documentation](scripts/README.md), [test guide](tests/README.md), a
 8. **No model artifact:** trained estimators are not saved for supported inference.
 9. **Saved notebook outputs:** committed outputs may contain record-level data-derived values.
 10. **No clinical validation:** software execution is not evidence of medical safety or effectiveness.
+
+![Research evaluation gates](docs/assets/evaluation-gates.svg)
 
 A corrected pipeline and stronger metrics would improve research quality, but would not by themselves make this a clinical tool.
 

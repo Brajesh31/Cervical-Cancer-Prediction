@@ -16,11 +16,20 @@ are not pinned.
 
 ## Current checks
 
-There is no automated test suite, lint configuration, notebook execution
-workflow, or continuous integration in the repository. No test command is
-defined. Running all notebook cells may produce outputs derived from
-patient-level health records, so only execute them in an environment approved
-to handle that data.
+The repository now includes repository-contract and synthetic CSV-audit tests,
+a Ruff lint configuration, and a GitHub Actions quality workflow. Install
+optional tooling with:
+
+    python -m pip install -r requirements-dev.txt
+    python -m pytest -q
+    ruff check scripts tests
+    python scripts/validate_project.py
+
+These checks do not execute notebook cells and do not load the actual patient-
+level CSV in CI. The optional local schema audit does read the CSV and should
+only be run in an approved environment. Running all notebook cells may produce
+outputs derived from sensitive health information, so only do so in an approved
+environment.
 
 ## Focused development workflow
 

@@ -15,8 +15,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  repository-hygiene:
-    name: 🧹 Repository hygiene
+  repository-quality:
+    name: 🧪 Documentation and test suite
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout
@@ -26,51 +26,38 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
 
-      - name: 📦 Install YAML parser
-        run: python -m pip install --disable-pip-version-check pyyaml
+      - name: 📦 Install developer dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-dev.txt pyyaml
 
-      - name: ✅ Validate repository and workflow
+      - name: 🧹 Lint maintenance utilities and tests
+        run: ruff check scripts tests
+
+      - name: 🧪 Run repository tests
+        run: python -m pytest -q
+
+      - name: 🔗 Validate project structure and Markdown links
+        run: python scripts/validate_project.py
+
+      - name: 📓 Validate notebook JSON
+        run: python -m json.tool cervical-cancer-risk-data.ipynb > /dev/null
+
+      - name: 🧾 Validate workflow YAML syntax
         run: |
           python - <<'PY'
           from pathlib import Path
           import yaml
-          required = [
-              "README.md", "LICENSE", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md",
-              "SECURITY.md", "SUPPORT.md", "requirements.txt",
-              "cervical-cancer-risk-data.ipynb", "docs/architecture.md",
-              "docs/evaluation-protocol.md", "docs/privacy.md",
-              "docs/ethics-and-governance.md", "docs/diagrams/research-workflow.mmd",
-              "docs/templates/experiment-record.md", ".github/pull_request_template.md",
-          ]
-          missing = [p for p in required if not Path(p).is_file()]
-          if missing:
-              raise SystemExit("Missing files: " + ", ".join(missing))
-          workflow = yaml.safe_load(Path(".github/workflows/quality-checks.yml").read_text())
-          if not isinstance(workflow, dict) or "jobs" not in workflow:
-              raise SystemExit("Workflow YAML is missing jobs")
-          print("Repository structure and workflow YAML checks passed.")
+
+          for path in Path(".github").rglob("*.yml"):
+              yaml.safe_load(path.read_text(encoding="utf-8"))
+          for path in Path(".github").rglob("*.yaml"):
+              yaml.safe_load(path.read_text(encoding="utf-8"))
+          print("GitHub workflow and issue/discussion YAML parsed successfully.")
           PY
 
-      - name: 🔗 Check local Markdown links
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re, sys
-          files = [Path("README.md"), *Path("docs").rglob("*.md")]
-          errors = []
-          for file in files:
-              for target in re.findall(r'!?' + r'\[[^\]]*\]\(([^)]+)\)', file.read_text(encoding="utf-8")):
-                  target = target.strip().split("#", 1)[0]
-                  if not target or "://" in target or target.startswith("mailto:"):
-                      continue
-                  if not (file.parent / target).resolve().exists():
-                      errors.append(f"{file}: {target}")
-          if errors:
-              print("\n".join(errors))
-              sys.exit("Broken local Markdown links")
-          print(f"Checked local links in {len(files)} Markdown files.")
-          PY
-
-      - name: 📓 Validate notebook JSON
-        run: python -m json.tool cervical-cancer-risk-data.ipynb > /dev/null
+# The health-related CSV is deliberately not loaded by CI. Local data audits
+# are opt-in and should run only in an environment approved for the dataset.

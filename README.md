@@ -1,5 +1,7 @@
 <div align="center">
 
+![Cervical Cancer Risk Factors Exploratory Analysis banner](docs/assets/project-banner.svg)
+
 # 🩺 Cervical Cancer Risk Factors Analysis
 
 ### An educational, notebook-based exploration of a cervical-cancer risk-factor dataset
@@ -72,34 +74,42 @@ This table describes the checked-in project, not a future architecture.
 ```text
 Cervical-Cancer-Prediction/
 ├── .github/
+│   ├── DISCUSSION_TEMPLATE/
 │   ├── ISSUE_TEMPLATE/
 │   ├── workflows/
 │   │   ├── quality-checks.yml
 │   │   └── update-readme.yml
+│   ├── dependabot.yml
 │   └── pull_request_template.md
 ├── docs/
-│   ├── assets/
-│   ├── diagrams/
-│   ├── runbooks/
-│   ├── templates/
-│   ├── architecture.md
-│   ├── installation.md
-│   ├── development.md
-│   ├── database.md
-│   ├── data-dictionary.md
+│   ├── assets/                 # Accessible SVG project illustrations
+│   ├── diagrams/               # Editable Mermaid flowcharts
+│   ├── runbooks/               # Maintainer and research procedures
+│   ├── templates/              # Reusable research and review forms
+│   ├── dataset-card.md
+│   ├── model-card.md
+│   ├── feature-audit.md
+│   ├── methodology.md
 │   ├── evaluation-protocol.md
-│   ├── reproducibility.md
-│   ├── ethics-and-governance.md
+│   ├── validation-strategy.md
+│   ├── data-quality.md
+│   ├── data-preparation.md
+│   ├── data-flow.md
 │   ├── privacy.md
-│   ├── accessibility.md
-│   ├── api.md
-│   ├── deployment.md
-│   ├── troubleshooting.md
-│   └── faq.md
+│   ├── ethics-and-governance.md
+│   ├── research-reporting.md
+│   ├── notebook-walkthrough.md
+│   └── ... additional project guides
+├── scripts/                    # Local repository and schema utilities
+├── tests/                       # Synthetic and repository contract tests
 ├── cervical-cancer-risk-data.ipynb
 ├── DATA _SET (1).csv
 ├── requirements.txt
-├── README.md
+├── requirements-dev.txt
+├── pyproject.toml
+├── Makefile
+├── ACKNOWLEDGMENTS.md
+├── GOVERNANCE.md
 ├── CHANGELOG.md
 ├── CITATION.cff
 ├── CODE_OF_CONDUCT.md
@@ -125,7 +135,9 @@ The notebook follows this broad sequence:
 5. Fit three scikit-learn estimators.
 6. Print selected metrics and plot an accuracy comparison.
 
-See the [editable workflow diagram](docs/diagrams/research-workflow.mmd) and [architecture guide](docs/architecture.md).
+See the [editable workflow diagram](docs/diagrams/research-workflow.mmd), [architecture guide](docs/architecture.md), and [additional diagrams](docs/diagrams/README.md).
+
+Additional visuals: [project banner](docs/assets/project-banner.svg), [privacy boundary](docs/assets/privacy-boundary.svg), and [evaluation gates](docs/assets/evaluation-gates.svg).
 
 ## 📊 Dataset and attribution
 
@@ -206,6 +218,33 @@ Before interpreting results, review:
 - Whether split randomness and software versions are recorded.
 - Whether saved outputs expose unnecessary record-level information.
 
+
+## 🧪 Developer tools and repository checks
+
+Optional developer tools are defined separately from notebook runtime dependencies.
+
+```bash
+python -m pip install -r requirements-dev.txt
+python scripts/validate_project.py
+python -m pytest -q
+ruff check scripts tests
+```
+
+You can also use the Makefile targets where GNU Make is available:
+
+```bash
+make install
+make install-dev
+make validate
+make test
+make audit-data
+```
+
+The repository validator checks required files, notebook JSON, and local Markdown links. The test suite uses repository contracts and synthetic CSV fixtures. The optional dataset audit reads the local dataset but reports only aggregate dimensions and required-header status. GitHub Actions deliberately does not load the patient-level CSV.
+
+See [scripts documentation](scripts/README.md), [test guide](tests/README.md), and [development guide](docs/development.md). These checks do not validate clinical performance.
+
+
 ## ⚠️ Current analysis limitations
 
 1. **File path mismatch:** the notebook reads `data.csv`, which is not the tracked CSV filename.
@@ -230,6 +269,27 @@ A corrected pipeline and stronger metrics would improve research quality, but wo
 | [Development](docs/development.md) | Notebook changes and review |
 | [Data and database](docs/database.md) | Dataset, provenance, and storage |
 | [Data dictionary](docs/data-dictionary.md) | Field groups and schema cautions |
+| [Dataset card](docs/dataset-card.md) | Dataset provenance, scope, and limitations |
+| [Model card](docs/model-card.md) | Current estimator description and explicit non-deployment status |
+| [Feature audit](docs/feature-audit.md) | Feature timing and target leakage review |
+| [Methodology](docs/methodology.md) | Current analysis sequence and recommended improvements |
+| [Data preparation](docs/data-preparation.md) | Missing values, path, and preprocessing cautions |
+| [Data quality](docs/data-quality.md) | Schema, quality dimensions, and safe reporting |
+| [Data flow](docs/data-flow.md) | Current trust boundaries and output risks |
+| [Validation strategy](docs/validation-strategy.md) | Research validation steps and limits |
+| [Metric glossary](docs/metric-glossary.md) | Classification metric definitions |
+| [Experiment tracking](docs/experiment-tracking.md) | Reproducible run records |
+| [Notebook walkthrough](docs/notebook-walkthrough.md) | Notebook execution and interpretation guide |
+| [Clinical-use boundary](docs/clinical-use-boundary.md) | Explicit exclusions and medical safety rules |
+| [Research reporting](docs/research-reporting.md) | How to communicate exploratory results |
+| [Publication checklist](docs/publication-checklist.md) | Review before sharing notebooks or reports |
+| [Model governance](docs/model-governance.md) | Model change control and approval boundaries |
+| [Known issues](docs/known-issues.md) | Verified implementation limitations |
+| [Technical debt](docs/technical-debt.md) | Prioritized maintenance backlog |
+| [Decision log](docs/decision-log.md) | Recorded project decisions |
+| [Release process](docs/release-process.md) | Documentation and code change procedure |
+| [Support matrix](docs/support-matrix.md) | Runtime and feature support status |
+| [Research ethics checklist](docs/research-ethics-checklist.md) | Responsible-use review |
 | [Evaluation protocol](docs/evaluation-protocol.md) | Leakage, splits, metrics, validation |
 | [Reproducibility](docs/reproducibility.md) | Environment and run records |
 | [Ethics and governance](docs/ethics-and-governance.md) | Responsible research boundaries |
@@ -260,6 +320,10 @@ Read [CONTRIBUTING.md](CONTRIBUTING.md). Useful work includes correcting the dat
 ## 🗺️ Roadmap
 
 See [ROADMAP.md](ROADMAP.md). Research-quality improvements should precede any deployment discussion. A production or clinical proposal would require independent scientific, clinical, privacy, governance, and regulatory review.
+
+## 🙏 Acknowledgments
+
+Dataset and dependency credits are documented in [ACKNOWLEDGMENTS.md](ACKNOWLEDGMENTS.md). Project decision-making and contribution review are described in [GOVERNANCE.md](GOVERNANCE.md).
 
 ## 📄 License
 

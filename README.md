@@ -245,7 +245,7 @@ make audit-data
 
 The repository validator checks required files, notebook JSON, and local Markdown links. The test suite uses repository contracts and synthetic CSV fixtures. The optional dataset audit reads the local dataset but reports only aggregate dimensions and required-header status. GitHub Actions deliberately does not load the patient-level CSV.
 
-See [scripts documentation](scripts/README.md), [test guide](tests/README.md), and [development guide](docs/development.md). These checks do not validate clinical performance.
+See [scripts documentation](scripts/README.md), [test guide](tests/README.md), [testing guide](docs/testing.md), and [development guide](docs/development.md). These checks do not validate clinical performance.
 
 
 ## ⚠️ Current analysis limitations
@@ -297,6 +297,10 @@ A corrected pipeline and stronger metrics would improve research quality, but wo
 | [Research ethics checklist](docs/research-ethics-checklist.md) | Responsible-use review |
 | [Evaluation protocol](docs/evaluation-protocol.md) | Leakage, splits, metrics, validation |
 | [Reproducibility](docs/reproducibility.md) | Environment and run records |
+| [Testing](docs/testing.md) | Automated checks and explicit test boundaries |
+| [Quality assurance](docs/quality-assurance.md) | CI checks and what they do not validate |
+| [Project structure](docs/project-structure.md) | Directory and file-by-file guide |
+| [Data retention](docs/data-retention.md) | Local copies, outputs, and deletion limits |
 | [Ethics and governance](docs/ethics-and-governance.md) | Responsible research boundaries |
 | [Privacy](docs/privacy.md) | Patient-level data and outputs |
 | [Accessibility](docs/accessibility.md) | Accessible charts and docs |

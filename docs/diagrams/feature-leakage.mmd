@@ -1,0 +1,9 @@
+flowchart TD
+    A[Candidate predictor] --> B{Known at intended prediction time?}
+    B -- No --> C[Exclude from prospective feature set]
+    B -- Yes --> D{Derived from target or later procedure?}
+    D -- Yes --> E[Investigate leakage and exclude if downstream]
+    D -- No --> F[Document definition, timing, and evidence]
+    F --> G[Include only after research review]
+    classDef warning fill:#ffedd5,stroke:#c2410c,color:#7c2d12
+    class C,E warning

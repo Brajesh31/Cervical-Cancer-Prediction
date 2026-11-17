@@ -1,0 +1,10 @@
+flowchart LR
+    A[Tracked patient-level CSV] --> B[Approved local environment]
+    B --> C[Jupyter kernel]
+    C --> D[Saved notebook outputs]
+    D --> E[Review and redact]
+    E --> F[Aggregate or synthetic documentation]
+    C -. never publish raw rows .-> G[Public issues and pull requests]
+    D -. inspect embedded output .-> G
+    classDef sensitive fill:#fee2e2,stroke:#b91c1c,color:#7f1d1d
+    class A,B,C,D sensitive

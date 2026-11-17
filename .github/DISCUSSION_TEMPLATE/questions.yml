@@ -1,0 +1,19 @@
+title: "❓ Question"
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic examples only. Do not share patient-level health records or private information."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What are you trying to understand?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Include relevant file paths, commit SHA, and sanitized error text.
+    validations:
+      required: false

@@ -1,0 +1,3 @@
+# Optional developer tooling. Runtime notebook dependencies remain in requirements.txt.
+pytest
+ruff

@@ -1,0 +1,20 @@
+flowchart TD
+    A[Cervical-Cancer-Prediction] --> B[Notebook and CSV]
+    A --> C[docs]
+    A --> D[GitHub automation]
+    A --> E[scripts]
+    A --> F[tests]
+    C --> C1[Guides and research references]
+    C --> C2[Assets and Mermaid diagrams]
+    C --> C3[Runbooks and templates]
+    D --> D1[Quality checks]
+    D --> D2[Issue and discussion templates]
+    D --> D3[Dependabot]
+    E --> E1[Repository validator]
+    E --> E2[Aggregate schema audit]
+    F --> F1[Repository contract tests]
+    F --> F2[Synthetic CSV tests]
+    classDef core fill:#dbeafe,stroke:#2563eb,color:#1e3a8a
+    classDef safety fill:#dcfce7,stroke:#15803d,color:#14532d
+    class A,B,C,D,E,F core
+    class F1,F2,E1,E2 safety

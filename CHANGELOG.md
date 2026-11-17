@@ -14,6 +14,24 @@ release is actually published; do not invent release dates or versions.
   likely UCI-derived dataset.
 - Added a dependency manifest for the packages imported by the notebook.
 
+### Repository quality and documentation expansion
+
+- Added dataset and model cards, feature leakage audit, methodology, evaluation
+  protocol, validation strategy, metric glossary, data quality guidance,
+  research reporting, and clinical-use boundary documentation.
+- Added privacy, data-flow, ethics, reproducibility, experiment tracking,
+  publication, governance, release, support, decision-log, known-issue, and
+  technical-debt references.
+- Added editable Mermaid diagrams, accessible SVG visual assets, runbooks,
+  and reusable research, dataset, test, and review templates.
+- Added issue and discussion templates, a pull request template, Dependabot
+  configuration, and repository governance and acknowledgments files.
+- Added local repository validation and aggregate dataset schema-audit scripts.
+  The dataset audit prints aggregate results only and is not run in CI.
+- Added synthetic-data and repository-contract tests, developer dependencies,
+  Ruff configuration, Makefile targets, and GitHub Actions quality checks.
+- CI deliberately does not load the patient-level health dataset.
+
 ### Clarified
 
 - The notebook compares Random Forest, SVC, and Logistic Regression on one

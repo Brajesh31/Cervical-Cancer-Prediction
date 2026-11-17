@@ -9,6 +9,9 @@ Mermaid source diagrams are version-controlled so contributors can review, updat
 | [Evaluation review gate](evaluation-review-gate.mmd) | Review checks before result interpretation |
 | [Feature leakage decision](feature-leakage.mmd) | Whether a predictor is available at the intended time |
 | [Model lifecycle](model-lifecycle.mmd) | Proposed research lifecycle and release boundary |
+| [Feature leakage decision](feature-leakage.mmd) | Whether a feature is known at the target decision time |
+| [Repository structure](project-structure.mmd) | Map of the repository's documentation and tooling |
+| [CI quality gates](ci-quality-gates.mmd) | Steps run by the GitHub quality workflow |
 
 ## Rendered visual assets
 
